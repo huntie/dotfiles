@@ -18,7 +18,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "home to left_command+left_arrow",
+                                "description": "Map home to left_command+left_arrow",
                                 "from": {
                                     "key_code": "home",
                                     "modifiers": {
@@ -36,9 +36,13 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
                             {
-                                "description": "end to left_command+right_arrow",
+                                "description": "Map end to left_command+right_arrow",
                                 "from": {
                                     "key_code": "end",
                                     "modifiers": {
@@ -56,9 +60,13 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
                             {
-                                "description": "left_shift+insert to left_command+v",
+                                "description": "Map left_shift+insert to left_command+v",
                                 "from": {
                                     "key_code": "insert",
                                     "modifiers": {
@@ -460,6 +468,9 @@
                 }
             ],
             "name": "Default",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": true,
             "simple_modifications": [
                 {
