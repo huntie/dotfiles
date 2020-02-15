@@ -1,8 +1,10 @@
+set hidden
 set nobackup
-set nowb
+set nowritebackup
 set noswapfile
 set noerrorbells
 set autoread
+set updatetime=300
 
 set mouse=a
 
@@ -24,6 +26,7 @@ syntax enable
 
 set number
 set relativenumber
+set signcolumn=yes
 set linespace=12
 
 set title
@@ -31,6 +34,7 @@ set titlestring=%F\ -\ vim
 set guicursor=
 set noshowmode
 set laststatus=2
+set shortmess+=c
 
 set termguicolors
 set background=dark
@@ -70,17 +74,34 @@ autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx undojoin | Neoformat
 
 set backspace=indent,eol,start
 
-map q <Nop>
-map ; :GFiles<CR>
-
 map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
+
+nmap q <Nop>
+nmap <silent> ; :GFiles<CR>
+
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 nnoremap <Leader>r :NERDTreeFind<cr>
 nnoremap <Leader>R :NERDTreeToggle<cr>
 nnoremap <Leader>s :ToggleWorkspace<CR>
 
+inoremap <silent><expr> <c-space> coc#refresh()
+
 map <Leader> <Plug>(easymotion-prefix)
+
+" Use tab to select completions
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Plugins "
 
@@ -124,5 +145,19 @@ let g:workspace_autosave = 0
 let g:workspace_session_disable_on_args = 1
 let g:workspace_undodir = $HOME . '/.vim/undo'
 let g:deoplete#enable_at_startup = 1
-let g:javascript_plugin_flow = 1
 let NERDTreeShowHidden = 1
+
+" Functions supporting coc.nvim
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
