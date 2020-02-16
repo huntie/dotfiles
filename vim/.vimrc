@@ -103,6 +103,9 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+" Automatically create parent dirs when writing a file
+autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
+
 " Plugins "
 
 " Install and run vim-plug on first run
