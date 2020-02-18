@@ -147,7 +147,6 @@ let g:lightline = {
 let g:workspace_autosave = 0
 let g:workspace_session_disable_on_args = 1
 let g:workspace_undodir = $HOME . '/.vim/undo'
-let g:deoplete#enable_at_startup = 1
 let NERDTreeShowHidden = 1
 
 " Functions supporting coc.nvim
