@@ -138,11 +138,8 @@ hi GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
 let g:lightline = {
   \     'active': {
   \         'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
-  \         'right': [['lineinfo'], ['percent'], ['gitbranch', 'fileformat', 'fileencoding']]
+  \         'right': [['lineinfo'], ['percent'], ['fileformat']]
   \     },
-  \     'component_function': {
-  \         'gitbranch': 'gitbranch#name'
-  \     }
   \ }
 
 let g:workspace_autosave = 0
