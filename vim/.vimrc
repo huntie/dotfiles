@@ -65,6 +65,7 @@ set splitright
 
 autocmd BufRead,BufNewFile *.fish set ft=fish
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile Podfile,*.podspec set filetype=ruby
 
 autocmd FileType gitcommit setlocal spell
 
