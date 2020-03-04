@@ -81,13 +81,6 @@ map <F12> :Goyo<CR>
 nmap q <Nop>
 nmap <silent> ; :GFiles<CR>
 
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> grn <Plug>(coc-rename)
-
 nnoremap <Leader>r :NERDTreeFind<cr>
 nnoremap <Leader>R :NERDTreeToggle<cr>
 nnoremap <Leader>s :ToggleWorkspace<CR>
@@ -96,14 +89,23 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 map <Leader> <Plug>(easymotion-prefix)
 
-" Use tab to select completions
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+if &runtimepath =~ 'coc.nvim'
+    nnoremap <silent> K :call <SID>show_documentation()<CR>
+    nmap <silent> gd <Plug>(coc-definition)
+    nmap <silent> gy <Plug>(coc-type-definition)
+    nmap <silent> gi <Plug>(coc-implementation)
+    nmap <silent> gr <Plug>(coc-references)
+    nmap <silent> grn <Plug>(coc-rename)
 
-autocmd CursorHold * silent call CocActionAsync('highlight')
+    " Use tab to select completions
+    inoremap <silent><expr> <TAB>
+          \ pumvisible() ? "\<C-n>" :
+          \ <SID>check_back_space() ? "\<TAB>" :
+          \ coc#refresh()
+    inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+    autocmd CursorHold * silent call CocActionAsync('highlight')
+endif
 
 " Automatically create parent dirs when writing a file
 autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
