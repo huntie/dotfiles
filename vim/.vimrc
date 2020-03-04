@@ -87,8 +87,6 @@ nnoremap <Leader>s :ToggleWorkspace<CR>
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-map <Leader> <Plug>(easymotion-prefix)
-
 if &runtimepath =~ 'coc.nvim'
     nnoremap <silent> K :call <SID>show_documentation()<CR>
     nmap <silent> gd <Plug>(coc-definition)
