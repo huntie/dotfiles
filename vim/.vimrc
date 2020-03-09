@@ -81,9 +81,11 @@ map <F12> :Goyo<CR>
 nmap q <Nop>
 nmap <silent> ; :GFiles<CR>
 
+nnoremap <Leader>s :%s/
+nnoremap <Leader>S :%s/\<<C-r><C-w>\>/
 nnoremap <Leader>r :NERDTreeFind<cr>
 nnoremap <Leader>R :NERDTreeToggle<cr>
-nnoremap <Leader>s :ToggleWorkspace<CR>
+nnoremap <Leader>w :ToggleWorkspace<CR>
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
