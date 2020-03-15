@@ -87,7 +87,10 @@ nnoremap <Leader>r :NERDTreeFind<cr>
 nnoremap <Leader>R :NERDTreeToggle<cr>
 nnoremap <Leader>w :ToggleWorkspace<CR>
 
-inoremap <silent><expr> <c-space> coc#refresh()
+nnoremap <Leader>fm :NERDTreeFind<cr>:call NERDTreeMoveNode()<cr>
+nnoremap <Leader>fn :NERDTreeFind<cr>:call NERDTreeAddNode()<cr>
+nnoremap <Leader>fc :NERDTreeFind<cr>:call NERDTreeCopyNode()<cr>
+nnoremap <Leader>fd :NERDTreeFind<cr>:call NERDTreeDeleteNode()<cr>
 
 if &runtimepath =~ 'coc.nvim'
     nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -96,6 +99,8 @@ if &runtimepath =~ 'coc.nvim'
     nmap <silent> gi <Plug>(coc-implementation)
     nmap <silent> gr <Plug>(coc-references)
     nmap <silent> grn <Plug>(coc-rename)
+
+    inoremap <silent><expr> <c-space> coc#refresh()
 
     " Use tab to select completions
     inoremap <silent><expr> <TAB>
