@@ -115,6 +115,9 @@ endif
 " Automatically create parent dirs when writing a file
 autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
 
+" Automatically exit if only remaining window is NERDTree
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " Plugins "
 
 " Install and run vim-plug on first run
@@ -153,6 +156,8 @@ let g:lightline = {
 let g:workspace_autosave = 0
 let g:workspace_session_disable_on_args = 1
 let g:workspace_undodir = $HOME . '/.vim/undo'
+
+let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 
 " Functions supporting coc.nvim
