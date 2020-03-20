@@ -79,7 +79,7 @@ map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
 
 nmap q <Nop>
-nmap <silent> ; :GFiles<CR>
+nmap <silent> ; :Files<CR>
 
 nnoremap <Leader>s :%s/
 nnoremap <Leader>S :%s/\<<C-r><C-w>\>/
@@ -159,6 +159,8 @@ let g:workspace_undodir = $HOME . '/.vim/undo'
 
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
+
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --depth=10 --ignore .git -f -g ""'
 
 " Functions supporting coc.nvim
 
