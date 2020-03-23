@@ -1,3 +1,5 @@
+so ~/.vim/plugins.vim
+
 set hidden
 set nobackup
 set nowritebackup
@@ -118,16 +120,7 @@ autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p'
 " Automatically exit if only remaining window is NERDTree
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Plugins "
-
-" Install and run vim-plug on first run
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-so ~/.vim/plugins.vim
+" Plugin options "
 
 let g:gruvbox_vert_split = 'bg1'
 let g:gruvbox_sign_column = 'bg0'
