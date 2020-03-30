@@ -15,12 +15,7 @@ if !has('nvim')
 endif
 
 set so=999
-set clipboard=unnamedplus
 set wildmenu
-
-if has('mac')
-    set clipboard=unnamed
-endif
 
 " Appearance "
 
