@@ -43,6 +43,7 @@ Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 
 if has('nvim')
+    Plug 'APZelos/blamer.nvim'
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 endif
 

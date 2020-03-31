@@ -145,6 +145,9 @@ let g:workspace_autosave = 0
 let g:workspace_session_disable_on_args = 1
 let g:workspace_undodir = $HOME . '/.vim/undo'
 
+let g:blamer_enabled = 1
+let g:blamer_template = '<committer> (<committer-time>) • <summary>'
+
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 
