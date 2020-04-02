@@ -66,7 +66,7 @@ autocmd BufRead,BufNewFile Podfile,*.podspec set filetype=ruby
 
 autocmd FileType gitcommit setlocal spell
 
-autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx undojoin | Neoformat
+autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.yml undojoin | Neoformat
 
 " Bindings "
 
