@@ -9,6 +9,7 @@ brew awscli
 brew bash
 brew bash-completion
 brew bat
+brew confd
 brew docker
 brew docker-compose
 brew ffmpeg
