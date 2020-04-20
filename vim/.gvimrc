@@ -7,6 +7,7 @@ set background=light
 set guioptions=
 set guioptions-=T
 set guifont=Native:h14
+set spell
 
 colorscheme pencil
 
