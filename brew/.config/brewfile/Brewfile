@@ -12,6 +12,7 @@ brew bat
 brew confd
 brew docker
 brew docker-compose
+brew fastlane
 brew ffmpeg
 brew findutils
 brew fish
@@ -55,7 +56,6 @@ cask google-chrome
 cask 1password
 cask adobe-creative-cloud
 cask discord
-cask fastlane
 cask firefox
 cask gimp
 cask graphiql
