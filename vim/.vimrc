@@ -76,7 +76,8 @@ map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
 
 nmap q <Nop>
-nmap <silent> ; :Files<CR>
+nmap <silent>; :Files<CR>
+nmap <silent>gx :Open<CR>
 
 nnoremap <Leader>s :%s/
 nnoremap <Leader>S :%s/\<<C-r><C-w>\>/
