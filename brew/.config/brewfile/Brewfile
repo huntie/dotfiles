@@ -13,6 +13,7 @@ brew confd
 brew docker
 brew docker-compose
 brew fastlane
+brew fd
 brew ffmpeg
 brew findutils
 brew fish

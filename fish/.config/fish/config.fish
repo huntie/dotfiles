@@ -15,8 +15,8 @@ set -x LESS r
 # Highlight color for grep matches
 set -x GREP_COLOR '1;32'
 
-# Perform fzf searches using ag, with options
-set -x FZF_DEFAULT_COMMAND 'ag --hidden --depth=10 --ignore .git -f -g ""'
+# Perform fzf searches using fd, with options
+set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --no-ignore --max-depth 10 --follow --exclude .git --exclude node_modules'
 set -x FZF_DEFAULT_OPTS '--preview \'[ -f {} ] && bat --color=always {}\''
 
 # fish fzf options

@@ -151,8 +151,7 @@ let g:blamer_template = '<committer> (<committer-time>) • <summary>'
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --depth=10 --ignore .git -f -g ""'
-let $FZF_DEFAULT_OPTS = '' " Disable --preview option set in shell
+let g:fzf_preview_window = ''
 
 " Functions supporting coc.nvim
 
