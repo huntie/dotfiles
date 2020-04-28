@@ -53,6 +53,11 @@ set smartcase
 set hlsearch
 set incsearch
 
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
+
 " Panes "
 
 set splitbelow
@@ -89,6 +94,9 @@ nnoremap <Leader>fm :NERDTreeFind<cr>:call NERDTreeMoveNode()<cr>
 nnoremap <Leader>fn :NERDTreeFind<cr>:call NERDTreeAddNode()<cr>
 nnoremap <Leader>fc :NERDTreeFind<cr>:call NERDTreeCopyNode()<cr>
 nnoremap <Leader>fd :NERDTreeFind<cr>:call NERDTreeDeleteNode()<cr>
+
+" Run a text search with `ag` in a Quickfix window
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 
 if &runtimepath =~ 'coc.nvim'
     nnoremap <silent> K :call <SID>show_documentation()<CR>
