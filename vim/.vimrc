@@ -108,6 +108,9 @@ if &runtimepath =~ 'coc.nvim'
     inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
     autocmd CursorHold * silent call CocActionAsync('highlight')
+
+    " Open actions menu (coc-actions)
+    nmap <silent> <leader>a :CocCommand actions.open<cr>
 endif
 
 " Automatically create parent dirs when writing a file
