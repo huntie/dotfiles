@@ -11,6 +11,4 @@ set spell
 
 colorscheme pencil
 
-let g:better_whitespace_enabled=0
-
 autocmd VimEnter * Goyo
