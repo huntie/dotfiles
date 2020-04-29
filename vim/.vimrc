@@ -84,8 +84,6 @@ nmap q <Nop>
 nmap <silent>; :Files<CR>
 nmap <silent>gx :Open<CR>
 
-nnoremap <Leader>s :%s/
-nnoremap <Leader>S :%s/\<<C-r><C-w>\>/
 nnoremap <Leader>r :NERDTreeFind<cr>
 nnoremap <Leader>R :NERDTreeToggle<cr>
 nnoremap <Leader>w :ToggleWorkspace<CR>
@@ -95,8 +93,6 @@ nnoremap <Leader>fn :NERDTreeFind<cr>:call NERDTreeAddNode()<cr>
 nnoremap <Leader>fc :NERDTreeFind<cr>:call NERDTreeCopyNode()<cr>
 nnoremap <Leader>fd :NERDTreeFind<cr>:call NERDTreeDeleteNode()<cr>
 
-" Run a text search with `ag` in a Quickfix window
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 
 if &runtimepath =~ 'coc.nvim'
     nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -156,6 +152,13 @@ let g:lightline = {
 let g:workspace_autosave = 0
 let g:workspace_session_disable_on_args = 1
 let g:workspace_undodir = $HOME . '/.vim/undo'
+
+let g:ctrlsf_default_root = 'project'
+let g:ctrlsf_extra_root_markers = ['Session.vim']
+let g:ctrlsf_search_mode = 'async'
+let g:ctrlsf_extra_backend_args = {
+  \   'ag': '--hidden --ignore .git --ignore node_modules'
+  \ }
 
 let g:blamer_enabled = 1
 let g:blamer_template = '<committer> (<committer-time>) • <summary>'
