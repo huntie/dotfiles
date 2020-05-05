@@ -11,11 +11,11 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-./.macos-prefs/system.sh
-./.macos-prefs/input.sh
-./.macos-prefs/sound.sh
-./.macos-prefs/desktop.sh
-./.macos-prefs/finder.sh
+source ./.macos-prefs/system.sh
+source ./.macos-prefs/input.sh
+source ./.macos-prefs/sound.sh
+source ./.macos-prefs/desktop.sh
+source ./.macos-prefs/finder.sh
 
 # Kill affected applications
 for app in "Activity Monitor" \
@@ -29,7 +29,7 @@ for app in "Activity Monitor" \
     "Messages" \
     "Photos" \
     "Safari" \
-    "Spectacle" \; do
+    "Spectacle"; do
     killall "${app}" &> /dev/null
 done
 
