@@ -9,6 +9,7 @@ brew awscli
 brew bash
 brew bash-completion
 brew bat
+brew clang-format
 brew confd
 brew docker
 brew docker-compose
@@ -24,6 +25,7 @@ brew git-lfs
 brew github/gh/gh
 brew gnu-sed
 brew gnupg
+brew grip
 brew htop
 brew icdiff
 brew imagemagick
