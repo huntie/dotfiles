@@ -60,6 +60,7 @@ cask 1password
 cask adobe-creative-cloud
 cask discord
 cask firefox
+cask gpg-suite-no-mail
 cask gimp
 cask graphiql
 cask hyperswitch
