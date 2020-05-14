@@ -19,6 +19,7 @@
     cn = commit --amend --no-edit
     ch = checkout
     cp = cherry-pick
+    sw = switch
     pushf = push --force-with-lease
     publish = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
     r1 = rebase HEAD^ -i
