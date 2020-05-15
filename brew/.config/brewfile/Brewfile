@@ -24,11 +24,11 @@ brew git
 brew git-lfs
 brew github/gh/gh
 brew gnu-sed
-brew gnupg
 brew grip
 brew htop
 brew icdiff
 brew imagemagick
+brew jq
 brew m-cli
 brew mailhog
 brew neofetch
@@ -37,7 +37,6 @@ brew nmap
 brew optipng
 brew ossp-uuid
 brew php
-brew php@7.1
 brew postgresql
 brew python
 brew ranger
@@ -57,8 +56,10 @@ brew yarn
 
 cask google-chrome
 cask 1password
-cask adobe-creative-cloud
+cask alfred
+cask authy
 cask discord
+cask dozer
 cask firefox
 cask gpg-suite-no-mail
 cask gimp
@@ -67,11 +68,15 @@ cask hyperswitch
 cask iterm2
 cask karabiner-elements
 cask keybase
+cask macvim
 cask musescore
 cask notion
+cask onedrive
+cask opera
 cask pocket-casts
 cask postico
 cask postman
+cask react-native-debugger
 cask sequel-pro
 cask slack
 cask spectacle
@@ -81,14 +86,16 @@ cask tower
 cask ngrok
 cask telegram
 cask transmission
+cask visual-studio-code
 cask vlc
+cask whatsapp
 
-appstore 775737590 iA Writer (5.2.6)
-appstore 823766827 OneDrive (19.012.0121)
-appstore 425424353 The Unarchiver (4.1.0)
-appstore 1278508951 Trello (2.10.8)
-appstore 1147396723 WhatsApp (0.3.2277)
-appstore 497799835 Xcode (10.1)
+appstore 937984704 Amphetamine
+appstore 775737590 iA Writer
+appstore 1274495053 Microsoft To Do
+appstore 425424353 The Unarchiver
+appstore 1278508951 Trello
+appstore 497799835 Xcode
 
 # Android SDK
 cask adoptopenjdk/openjdk/adoptopenjdk8
