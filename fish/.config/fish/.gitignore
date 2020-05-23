@@ -1,4 +1,5 @@
 conf.d/
+fish_variables
 
 # Plugin completions
 completions/
