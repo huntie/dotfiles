@@ -1,2 +1,3 @@
-# Installed plugins
-bundle
+# vim-plug
+autoload
+plugged
