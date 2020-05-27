@@ -1,3 +1,0 @@
-[submodule "sublime-text-3"]
-	path = sublime-text-3/.config/sublime-text-3/Packages/User
-	url = git@github.com:huntie/sublime
