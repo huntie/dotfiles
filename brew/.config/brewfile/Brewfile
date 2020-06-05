@@ -29,6 +29,7 @@ brew htop
 brew icdiff
 brew imagemagick
 brew jq
+brew lnav
 brew m-cli
 brew mailhog
 brew neofetch
