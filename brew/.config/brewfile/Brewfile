@@ -23,6 +23,7 @@ brew git
 brew git-lfs
 brew github/gh/gh
 brew gnu-sed
+brew graphviz
 brew grip
 brew htop
 brew icdiff
