@@ -3,6 +3,3 @@
 *.sublime-workspace
 .idea/
 Session.vim
-
-# Node Version Manager
-.nvmrc
