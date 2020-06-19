@@ -86,14 +86,14 @@
                         ]
                     },
                     {
-                        "description": "Map right_command+backspace to delete_forward",
+                        "description": "Map left_shift+backspace to delete_forward",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "delete_or_backspace",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_command"
+                                            "left_shift"
                                         ]
                                     }
                                 },
