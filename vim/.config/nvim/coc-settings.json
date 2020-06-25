@@ -6,5 +6,6 @@
     "json",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "suggest.noselect": false
 }

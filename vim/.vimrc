@@ -16,6 +16,7 @@ endif
 
 set so=999
 set wildmenu
+set completeopt-=noselect
 
 " Appearance "
 
