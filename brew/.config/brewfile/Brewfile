@@ -62,6 +62,7 @@ cask authy
 cask discord
 cask dozer
 cask firefox
+cask flipper
 cask gpg-suite-no-mail
 cask gimp
 cask graphiql
@@ -79,7 +80,7 @@ cask pocket-casts
 cask postico
 cask postman
 cask react-native-debugger
-cask sequel-pro
+cask sequel-ace
 cask slack
 cask spectacle
 cask spotify
