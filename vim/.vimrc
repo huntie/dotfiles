@@ -165,6 +165,7 @@ let g:blamer_template = '<committer> (<committer-time>) • <summary>'
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 let g:fzf_preview_window = ''
 
 " Functions supporting coc.nvim
