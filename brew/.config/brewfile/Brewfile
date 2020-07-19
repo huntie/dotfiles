@@ -72,6 +72,7 @@ cask karabiner-elements
 cask keybase
 cask keycastr
 cask macvim
+cask monitorcontrol
 cask musescore
 cask notion
 cask onedrive
