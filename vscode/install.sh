@@ -1,0 +1,17 @@
+code --install-extension brian-anders.sublime-duplicate-text
+code --install-extension britesnow.vscode-toggle-quotes
+code --install-extension bungcip.better-toml
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dinhlife.gruvbox
+code --install-extension editorconfig.editorconfig
+code --install-extension esbenp.prettier-vscode
+code --install-extension malmaud.tmux
+code --install-extension marp-team.marp-vscode
+code --install-extension mikestead.dotenv
+code --install-extension ms-python.python
+code --install-extension pnp.polacode
+code --install-extension redhat.vscode-yaml
+code --install-extension skyapps.fish-vscode
+code --install-extension sleistner.vscode-fileutils
+code --install-extension threadheap.serverless-ide-vscode
+code --install-extension xadillax.viml
