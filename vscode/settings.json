@@ -15,6 +15,10 @@
     "editor.scrollBeyondLastLine": true,
     "editor.snippetSuggestions": "top",
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!#%^&*|+=[]{}`~?",
+    "emmet.includeLanguages": {
+        "flow": "javascriptreact",
+        "javascript": "javascriptreact"
+    },
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "files.saveConflictResolution": "overwriteFileOnDisk",
