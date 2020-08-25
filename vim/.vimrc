@@ -35,7 +35,6 @@ set laststatus=2
 set shortmess+=c
 
 set termguicolors
-set background=dark
 
 " File behaviour "
 
@@ -129,12 +128,15 @@ let g:gruvbox_sign_column = 'bg0'
 
 colorscheme gruvbox
 
-hi Normal ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 hi CursorLineNr ctermfg=white
-hi SignColumn ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
 
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=darkred
+
+hi ALEErrorSign ctermbg=NONE
+hi ALEWarningSign ctermbg=NONE
 
 hi GitGutterAdd ctermfg=green ctermbg=NONE
 hi GitGutterChange ctermfg=yellow ctermbg=NONE
