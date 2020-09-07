@@ -78,6 +78,7 @@
         "titleBar.inactiveBackground": "#3c3d3f"
     },
     "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.editor.closeEmptyGroups": false,
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile"
