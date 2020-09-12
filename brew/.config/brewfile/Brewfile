@@ -4,7 +4,6 @@ tap homebrew/core
 tap homebrew/services
 tap homebrew/cask
 
-brew ansible
 brew awscli
 brew bash
 brew bash-completion
@@ -18,7 +17,6 @@ brew ffmpeg
 brew findutils
 brew fish
 brew fzf
-brew ghc
 brew git
 brew git-lfs
 brew github/gh/gh
@@ -38,7 +36,6 @@ brew nmap
 brew optipng
 brew ossp-uuid
 brew php
-brew postgresql
 brew python
 brew ranger
 brew reattach-to-user-namespace
@@ -71,12 +68,10 @@ cask iterm2
 cask karabiner-elements
 cask keybase
 cask keycastr
-cask macvim
 cask monitorcontrol
 cask musescore
 cask notion
 cask onedrive
-cask opera
 cask pocket-casts
 cask postico
 cask postman
@@ -87,7 +82,6 @@ cask spectacle
 cask spotify
 cask sublime-text
 cask tower
-cask ngrok
 cask telegram
 cask transmission
 cask visual-studio-code
