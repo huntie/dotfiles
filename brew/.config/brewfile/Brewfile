@@ -60,6 +60,7 @@ cask discord
 cask dozer
 cask firefox
 cask flipper
+cask glance
 cask gpg-suite-no-mail
 cask gimp
 cask graphiql
