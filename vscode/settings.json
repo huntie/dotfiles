@@ -42,8 +42,6 @@
         "activityBarBadge.background": "#d54826",
         "editor.background": "#282828",
         "editor.lineHighlightBackground": "#373533",
-        "editor.selectionBackground": "#3b3836",
-        "editor.selectionHighlightBackground": "#3b3836",
         "editorGroup.border": "#2c2d2f",
         "editorGroupHeader.noTabsBackground": "#232426",
         "editorGroupHeader.tabsBackground": "#232426",
@@ -79,6 +77,8 @@
     },
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "workbench.editor.closeEmptyGroups": false,
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile"
