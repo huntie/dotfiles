@@ -76,5 +76,9 @@
         "key": "tab",
         "command": "-editor.emmet.action.expandAbbreviation",
         "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+    },
+    {
+        "key": "cmd+k l",
+        "command": "workbench.files.action.showActiveFileInExplorer"
     }
 ]

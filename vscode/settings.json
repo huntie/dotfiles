@@ -19,6 +19,7 @@
         "flow": "javascriptreact",
         "javascript": "javascriptreact"
     },
+    "explorer.autoReveal": false,
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "files.saveConflictResolution": "overwriteFileOnDisk",
