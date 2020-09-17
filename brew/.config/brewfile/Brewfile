@@ -19,7 +19,7 @@ brew fish
 brew fzf
 brew git
 brew git-lfs
-brew github/gh/gh
+brew gh
 brew gnu-sed
 brew graphviz
 brew grip
