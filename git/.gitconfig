@@ -8,6 +8,8 @@
     showUntrackedFiles = all
 [push]
     default = simple
+[pull]
+    rebase = true
 [alias]
     s = status
     l = log
