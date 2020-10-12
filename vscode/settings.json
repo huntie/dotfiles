@@ -67,6 +67,7 @@
         "statusBar.background": "#2a2b2d",
         "statusBar.border": "#2a2b2d",
         "statusBar.foreground": "#919293",
+        "statusBarItem.remoteBackground": "#5f8e61",
         "tab.activeBackground": "#282828",
         "tab.activeBorder": "#282828",
         "tab.activeForeground": "#dadada",
