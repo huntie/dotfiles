@@ -32,7 +32,6 @@
         "flow": "javascriptreact",
         "javascript": "javascriptreact"
     },
-    "explorer.autoReveal": false,
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "files.saveConflictResolution": "overwriteFileOnDisk",
@@ -40,8 +39,10 @@
     "git.allowForcePush": true,
     "git.autoStash": true,
     "git.decorations.enabled": false,
+    "problems.decorations.enabled": false,
     "problems.showCurrentInStatus": true,
     "scm.countBadge": "off",
+    "scm.diffDecorationsGutterWidth": 2,
     "telemetry.enableTelemetry": false,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.cursorBlinking": true,
@@ -92,8 +93,6 @@
     },
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "workbench.editor.closeEmptyGroups": false,
-    "workbench.editor.enablePreview": true,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile"
