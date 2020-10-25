@@ -1,3 +1,5 @@
+set nocompatible
+
 so ~/.vim/plugins.vim
 
 set hidden
@@ -17,6 +19,8 @@ endif
 set so=999
 set wildmenu
 set completeopt-=noselect
+
+set backspace=indent,eol,start
 
 " Appearance "
 
@@ -73,8 +77,6 @@ autocmd FileType gitcommit setlocal spell
 
 " Bindings "
 
-set backspace=indent,eol,start
-
 map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
 
@@ -90,30 +92,6 @@ nnoremap <Leader>fm :NERDTreeFind<cr>:call NERDTreeMoveNode()<cr>
 nnoremap <Leader>fn :NERDTreeFind<cr>:call NERDTreeAddNode()<cr>
 nnoremap <Leader>fc :NERDTreeFind<cr>:call NERDTreeCopyNode()<cr>
 nnoremap <Leader>fd :NERDTreeFind<cr>:call NERDTreeDeleteNode()<cr>
-
-
-if &runtimepath =~ 'coc.nvim'
-    nnoremap <silent> K :call <SID>show_documentation()<CR>
-    nmap <silent> gd <Plug>(coc-definition)
-    nmap <silent> gy <Plug>(coc-type-definition)
-    nmap <silent> gi <Plug>(coc-implementation)
-    nmap <silent> gr <Plug>(coc-references)
-    nmap <silent> grn <Plug>(coc-rename)
-
-    inoremap <silent><expr> <c-space> coc#refresh()
-
-    " Use tab to select completions
-    inoremap <silent><expr> <TAB>
-          \ pumvisible() ? "\<C-n>" :
-          \ <SID>check_back_space() ? "\<TAB>" :
-          \ coc#refresh()
-    inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-    autocmd CursorHold * silent call CocActionAsync('highlight')
-
-    " Open actions menu (coc-actions)
-    nmap <silent> <leader>a :CocCommand actions.open<cr>
-endif
 
 " Automatically create parent dirs when writing a file
 autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
@@ -167,20 +145,26 @@ let g:blamer_template = '<committer> (<committer-time>) • <summary>'
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-let g:fzf_preview_window = ''
+let g:deoplete#enable_at_startup = 1
 
-" Functions supporting coc.nvim
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
+let g:lsc_server_commands = {
+ \  'javascript': {
+ \    'command': 'typescript-language-server --stdio',
+ \    'log_level': -1,
+ \    'suppress_stderr': v:true,
+ \  },
+ \  'typescript': {
+ \    'command': 'typescript-language-server --stdio',
+ \    'log_level': -1,
+ \    'suppress_stderr': v:true,
+ \  }
+ \}
+let g:lsc_auto_map = {
+ \  'GoToDefinition': 'gd',
+ \  'FindReferences': 'gr',
+ \  'Rename': 'gR',
+ \  'ShowHover': 'K',
+ \  'FindCodeActions': 'ga',
+ \  'Completion': 'omnifunc',
+ \}
+let g:lsc_enable_autocomplete = v:true

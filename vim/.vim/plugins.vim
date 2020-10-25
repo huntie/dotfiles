@@ -40,7 +40,8 @@ Plug 'xolox/vim-shell'
 
 if has('nvim')
     Plug 'APZelos/blamer.nvim'
-    Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+    Plug 'natebosch/vim-lsc'
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 
 call plug#end()
