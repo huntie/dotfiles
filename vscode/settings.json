@@ -27,6 +27,7 @@
             }
         ]
     },
+    "editor.wordBasedSuggestions": true,
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!#%^&*|+=[]{}`~?",
     "emmet.includeLanguages": {
         "flow": "javascriptreact",

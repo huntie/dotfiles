@@ -60,8 +60,7 @@
     },
     {
         "key": "cmd+e",
-        "command": "editor.emmet.action.expandAbbreviation",
-        "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+        "command": "emmet.expandAbbreviation"
     },
     {
         "key": "ctrl+right",
