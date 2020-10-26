@@ -18,7 +18,7 @@
     },
     {
         "key": "shift+cmd+f",
-        "command": "workbench.action.replaceInFiles"
+        "command": "-workbench.action.findInFiles"
     },
     {
         "key": "shift+cmd+h",
@@ -26,7 +26,7 @@
     },
     {
         "key": "shift+cmd+f",
-        "command": "-workbench.action.findInFiles"
+        "command": "workbench.action.replaceInFiles"
     },
     {
         "key": "shift+cmd+d",
@@ -46,17 +46,8 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+g",
-        "command": "-workbench.action.gotoLine"
-    },
-    {
         "key": "cmd+g",
         "command": "workbench.action.gotoLine"
-    },
-    {
-        "key": "shift+cmd+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "shift+delete",
@@ -73,12 +64,23 @@
         "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
     },
     {
-        "key": "tab",
-        "command": "-editor.emmet.action.expandAbbreviation",
-        "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+        "key": "ctrl+right",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus"
     },
     {
-        "key": "cmd+k l",
-        "command": "workbench.files.action.showActiveFileInExplorer"
+        "key": "ctrl+shift+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "cursorWordPartStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "cursorWordPartStartLeftSelect",
+        "when": "textInputFocus"
     }
 ]
