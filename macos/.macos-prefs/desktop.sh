@@ -21,6 +21,11 @@ defaults write com.apple.systemuiserver menuExtras -array \
     "/System/Library/CoreServices/Menu Extras/Battery.menu" \
     "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
+# - Windows -
+
+# Disable wallpaper tinting in windows
+defaults write NSGlobalDomain AppleReduceDesktopTinting -int 1
+
 # - Dock -
 
 # Change minimize/maximize window effect
