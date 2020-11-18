@@ -14,4 +14,5 @@ code --install-extension redhat.vscode-yaml
 code --install-extension skyapps.fish-vscode
 code --install-extension sleistner.vscode-fileutils
 code --install-extension threadheap.serverless-ide-vscode
+code --install-extension will-stone.in-any-case
 code --install-extension xadillax.viml
