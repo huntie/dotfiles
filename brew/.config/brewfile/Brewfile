@@ -5,8 +5,6 @@ tap homebrew/services
 tap homebrew/cask
 
 brew awscli
-brew bash
-brew bash-completion
 brew bat
 brew clang-format
 brew confd
