@@ -1,3 +1,4 @@
 --style=numbers,changes
 --theme=Gruvbox-N
 --pager="less -rR"
+--tabs 4
