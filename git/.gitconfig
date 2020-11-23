@@ -1,7 +1,7 @@
 [user]
 	name = Alex Hunt
 	email = hello@alexhunt.io
-	signingkey = 7B78B3A2DCC8FF93
+	signingkey = 144D5AFFA2FB93C3167B5B0C7B78B3A2DCC8FF93
 [commit]
 	gpgsign = true
 [status]
@@ -33,3 +33,5 @@
 	dtc = dt --cached -y
 [core]
 	excludesfile = ~/.gitignore
+[gpg]
+	program = /usr/local/bin/gpg
