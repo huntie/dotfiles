@@ -33,5 +33,3 @@
 	dtc = dt --cached -y
 [core]
 	excludesfile = ~/.gitignore
-[includeIf "gitdir:~/Development/unmind/"]
-	path = .gitconfig-unmind
