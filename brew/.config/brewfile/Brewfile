@@ -7,6 +7,7 @@ tap homebrew/cask
 brew awscli
 brew bat
 brew clang-format
+brew composer
 brew confd
 brew docker
 brew docker-compose
