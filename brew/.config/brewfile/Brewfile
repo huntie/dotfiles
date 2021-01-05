@@ -24,7 +24,6 @@ brew gping
 brew graphviz
 brew grip
 brew htop
-brew icdiff
 brew imagemagick
 brew jq
 brew lnav

@@ -33,7 +33,6 @@ end
 # - Aliases -
 
 alias ls 'ls -F -h'
-alias diff colordiff
 alias grep 'grep -n --color'
 
 alias setclip 'xclip -selection c'
@@ -48,7 +47,6 @@ abbr -a rand 'openssl rand -base64'
 
 if [ (uname) = 'Darwin' ]
     alias ls 'ls -F -h -G'
-    alias diff icdiff
     alias setclip pbcopy
     alias getclip pbpaste
 
