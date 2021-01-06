@@ -11,6 +11,7 @@ brew composer
 brew confd
 brew docker
 brew docker-compose
+brew fastmod
 brew fd
 brew ffmpeg
 brew findutils
