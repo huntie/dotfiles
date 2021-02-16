@@ -41,9 +41,9 @@ alias getclip 'xclip -selection c -o'
 abbr -a ywd 'pwd | setclip'
 abbr -a rsync 'rsync --progress'
 abbr -a npmlist 'npm list -g --depth=0'
-abbr -a phpunit './vendor/bin/phpunit --stop-on-fail --stop-on-error'
-abbr -a tinker 'php artisan tinker'
 abbr -a rand 'openssl rand -base64'
+
+alias sail './vendor/bin/sail'
 
 if [ (uname) = 'Darwin' ]
     alias ls 'ls -F -h -G'
