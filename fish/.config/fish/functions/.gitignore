@@ -1,8 +1,8 @@
 fisher.fish
 
 # Fisher-managed scripts
-_pisces*.fish
 __fzf*.fish
 __z*.fish
-humanize_duration.fish
+_autopair*.fish
+_nvm*.fish
 nvm.fish
