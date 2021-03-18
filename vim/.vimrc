@@ -147,24 +147,33 @@ let NERDTreeShowHidden = 1
 
 let g:deoplete#enable_at_startup = 1
 
-let g:lsc_server_commands = {
- \  'javascript': {
- \    'command': 'typescript-language-server --stdio',
- \    'log_level': -1,
- \    'suppress_stderr': v:true,
- \  },
- \  'typescript': {
- \    'command': 'typescript-language-server --stdio',
- \    'log_level': -1,
- \    'suppress_stderr': v:true,
- \  }
- \}
-let g:lsc_auto_map = {
- \  'GoToDefinition': 'gd',
- \  'FindReferences': 'gr',
- \  'Rename': 'gR',
- \  'ShowHover': 'K',
- \  'FindCodeActions': 'ga',
- \  'Completion': 'omnifunc',
- \}
-let g:lsc_enable_autocomplete = v:true
+nmap <silent> <leader>aj :ALENext<cr>
+nmap <silent> <leader>ak :ALEPrevious<cr>
+nnoremap K :ALEHover<CR>
+nnoremap <silent> gr :ALEFindReferences<CR>
+
+" ALE
+
+" WIP: See https://blog.ffff.lt/posts/typescript-and-ale/, https://github.com/daliusd/cfg/blob/master/.vimrc
+
+let js_fixers = ['prettier', 'eslint']
+let g:ale_fixers = {
+\   'javascript': js_fixers,
+\   'javascript.jsx': js_fixers,
+\   'typescript': js_fixers,
+\   'typescriptreact': js_fixers,
+\   'css': ['prettier'],
+\   'json': ['prettier'],
+\}
+
+let g:ale_fix_on_save = 1
+let g:ale_sign_column_always = 1
+let g:ale_floating_preview = 1
+
+" let g:lsc_auto_map = {
+"  \  'GoToDefinition': 'gd',
+"  \  'FindReferences': 'gr',
+"  \  'Rename': 'gR',
+"  \  'ShowHover': 'K',
+"  \  'FindCodeActions': 'ga',
+"  \}

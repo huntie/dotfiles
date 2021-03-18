@@ -14,6 +14,7 @@ Plug 'christoomey/vim-system-copy'
 Plug 'dag/vim-fish'
 Plug 'darfink/vim-plist'
 Plug 'dyng/ctrlsf.vim'
+Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -34,14 +35,11 @@ Plug 'thaerkh/vim-workspace'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'w0rp/ale'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-shell'
 
 if has('nvim')
     Plug 'APZelos/blamer.nvim'
-    Plug 'natebosch/vim-lsc'
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 
 call plug#end()
