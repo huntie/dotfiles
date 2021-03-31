@@ -95,6 +95,7 @@
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "workbench.editor.closeEmptyGroups": false,
     "workbench.editor.showIcons": false,
+    "workbench.editor.splitOnDragAndDrop": false,
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile"
 }
