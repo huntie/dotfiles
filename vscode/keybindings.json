@@ -81,5 +81,17 @@
         "key": "ctrl+shift+left",
         "command": "cursorWordPartStartLeftSelect",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+1",
+        "command": "workbench.action.editorLayoutSingle"
+    },
+    {
+        "key": "shift+alt+2",
+        "command": "workbench.action.editorLayoutTwoColumns"
+    },
+    {
+        "key": "shift+alt+3",
+        "command": "workbench.action.editorLayoutThreeColumns"
     }
 ]
