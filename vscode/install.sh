@@ -10,4 +10,4 @@ code --install-extension marp-team.marp-vscode
 code --install-extension mikestead.dotenv
 code --install-extension pnp.polacode
 code --install-extension sleistner.vscode-fileutils
-code --install-extension will-stone.in-any-case
+code --install-extension wmaurer.change-case
