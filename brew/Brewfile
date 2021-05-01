@@ -1,0 +1,107 @@
+tap 'homebrew/core'
+tap 'homebrew/services'
+tap 'homebrew/cask'
+
+cask_args appdir: '/Applications', require_sha: true
+
+# Core/high-priority dependencies
+
+brew 'mas'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'karabiner-elements'
+mas '1Password', id: 443987910
+
+# Command line apps
+
+brew 'bat'
+brew 'clang-format'
+brew 'composer'
+brew 'confd'
+brew 'docker'
+brew 'docker-compose'
+brew 'fastmod'
+brew 'fd'
+brew 'findutils'
+brew 'fish'
+brew 'fzf'
+brew 'git'
+brew 'git-lfs'
+brew 'gh'
+brew 'gnu-sed'
+brew 'gping'
+brew 'graphviz'
+brew 'grip'
+brew 'htop'
+brew 'imagemagick'
+brew 'jq'
+brew 'lnav'
+brew 'm-cli'
+brew 'mailhog'
+brew 'neofetch'
+brew 'neovim'
+brew 'nmap'
+brew 'optipng'
+brew 'ossp-uuid'
+brew 'php'
+brew 'python'
+brew 'ranger'
+brew 'reattach-to-user-namespace'
+brew 'sc-im'
+brew 'sqlite'
+brew 'stow'
+brew 'terminal-notifier'
+brew 'the_silver_searcher'
+brew 'tldr'
+brew 'tmux'
+brew 'tree'
+brew 'vim'
+brew 'watchman'
+brew 'wget'
+brew 'yarn'
+
+# Desktop apps
+
+cask 'alfred'
+cask 'authy'
+cask 'docker'
+cask 'dozer'
+cask 'firefox'
+cask 'gimp'
+cask 'gpg-suite-no-mail'
+cask 'hyperswitch'
+cask 'monitorcontrol'
+cask 'pocket-casts'
+cask 'postico'
+cask 'postman'
+cask 'spectacle'
+cask 'spotify'
+cask 'sublime-text'
+cask 'tower'
+cask 'transmission'
+cask 'visual-studio-code'
+cask 'vlc'
+mas 'iA Writer', id: 775737590
+mas 'Microsoft To Do', id: 1274495053
+mas 'WhatsApp Desktop', id: 1147396723
+mas 'Xcode', id: 497799835
+
+# Personal
+# cask 'discord'
+# cask 'keybase'
+# cask 'notion'
+# mas 'OneDrive', id: 823766827
+
+# JDK
+# cask 'adoptopenjdk/openjdk/adoptopenjdk11'
+
+# Android
+# cask 'android-sdk'
+# cask 'android-studio'
+# cask 'android-platform-tools'
+
+# Other dev apps
+# cask 'flipper'
+# cask 'keycastr'
+# cask 'react-native-debugger'
+# cask 'sequel-ace'
