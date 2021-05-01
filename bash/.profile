@@ -7,6 +7,9 @@ export PATH=$(python3 -m site --user-base)/bin:$PATH
 # Composer
 export PATH=$HOME/.composer/vendor/bin:$PATH
 
+# Rust
+source "$HOME/.cargo/env"
+
 # Android SDK (macOS)
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export PATH=$ANDROID_SDK_ROOT/emulator:$PATH
