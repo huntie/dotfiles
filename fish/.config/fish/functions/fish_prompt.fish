@@ -1,18 +1,16 @@
 function fish_prompt
-    set_color 595959
-    echo -n "$USER "
-    echo -n (prompt_pwd)
-    echo -n ' '
+    set -l git_branch (git symbolic-ref --short HEAD 2> /dev/null)
 
-    git_branch
+    set_color 595959
+    echo -n "$USER "(prompt_pwd)' '
 
     if [ -n "$git_branch" ]
-        echo -n "($git_branch"
+        set -l git_changed (git ls-files -m)
 
-        if [ $git_dirty_count -gt 0 ]
+        echo -n "($git_branch"
+        if [ -n "$git_changed" ]
             echo -n '*'
         end
-
         echo -n ') '
     end
 
