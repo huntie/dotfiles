@@ -2,80 +2,71 @@ set nocompatible
 
 so ~/.vim/plugins.vim
 
+" Core {{{
+
 set hidden
 set nobackup
 set nowritebackup
 set noswapfile
 set noerrorbells
-set autoread
-set updatetime=300
-
 set mouse=a
-
-if !has('nvim')
-    set ttymouse=xterm2
-endif
-
-set so=999
-set wildmenu
-set completeopt-=noselect
-
-set backspace=indent,eol,start
-
-" Appearance "
-
-syntax enable
-
 set number
 set relativenumber
 set signcolumn=yes
-set linespace=12
 
-set title
-set titlestring=%F\ -\ vim
+" Use block cursor in insert mode
 set guicursor=
+
+" Statusline
 set noshowmode
 set laststatus=2
-set shortmess+=c
 
-set termguicolors
-
-" File behaviour "
-
-set expandtab
-set smarttab
-set linebreak
-set breakindent
-set nostartofline
-
-set shiftwidth=4
-set tabstop=4
-
-" Search "
-
+" Search
 set smartcase
 set hlsearch
-set incsearch
 
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
 endif
 
-" Panes "
-
+" Panes
 set splitbelow
 set splitright
 
-" Filetype associations "
+" Completion menu
+set completeopt-=noselect
+set shortmess+=c
 
-autocmd BufRead,BufNewFile *.fish set ft=fish
+" Set max scroll offset (vertically centre cursor within window)
+set so=999
+
+" Indents
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set linebreak
+set breakindent
+set nostartofline
+
+" Enable syntax folding
+set foldmethod=marker foldlevel=0
+
+"}}}
+
+" File types {{{
+
+autocmd BufRead,BufNewFile *.fish set filetype=fish
+autocmd BufNewFile,BufRead *.flow set filetype=javascript
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile Podfile,*.podspec set filetype=ruby
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
 
 autocmd FileType gitcommit setlocal spell
 
-" Bindings "
+"}}}
+
+" Bindings {{{
 
 map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
@@ -102,27 +93,33 @@ autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p'
 " Automatically exit if only remaining window is NERDTree
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Plugin options "
+"}}}
 
-let g:gruvbox_vert_split = 'bg1'
-let g:gruvbox_sign_column = 'bg0'
+" Syntax theme {{{
 
-colorscheme gruvbox
+if exists("&termguicolors")
+    syntax enable
+    set termguicolors
 
-hi Normal guibg=NONE ctermbg=NONE
-hi CursorLineNr ctermfg=white
-hi SignColumn guibg=NONE ctermbg=NONE
+    let g:gruvbox_vert_split = 'bg1'
+    let g:gruvbox_sign_column = 'bg0'
+    colorscheme gruvbox
 
-hi clear SpellBad
-hi SpellBad cterm=underline ctermfg=darkred
+    hi Normal guibg=NONE ctermbg=NONE
+    hi CursorLineNr ctermfg=white
+    hi SignColumn guibg=NONE ctermbg=NONE
+    hi clear SpellBad
+    hi SpellBad cterm=underline ctermfg=darkred
 
-hi ALEErrorSign ctermbg=NONE
-hi ALEWarningSign ctermbg=NONE
+    hi GitGutterAdd ctermfg=green ctermbg=NONE
+    hi GitGutterChange ctermfg=yellow ctermbg=NONE
+    hi GitGutterDelete ctermfg=darkred ctermbg=NONE
+    hi GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
+endif
 
-hi GitGutterAdd ctermfg=green ctermbg=NONE
-hi GitGutterChange ctermfg=yellow ctermbg=NONE
-hi GitGutterDelete ctermfg=darkred ctermbg=NONE
-hi GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
+"}}}
+
+" Plugin options {{{
 
 let g:lightline = {
   \     'active': {
@@ -171,3 +168,5 @@ let g:lsc_auto_map = {
  \  'Completion': 'omnifunc',
  \}
 let g:lsc_enable_autocomplete = v:true
+
+"}}}

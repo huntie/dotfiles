@@ -33,6 +33,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'thaerkh/vim-workspace'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 
