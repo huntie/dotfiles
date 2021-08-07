@@ -35,8 +35,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-shell'
 
 if has('nvim')
     Plug 'APZelos/blamer.nvim'

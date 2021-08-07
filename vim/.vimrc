@@ -82,7 +82,10 @@ map <F12> :Goyo<CR>
 
 nmap q <Nop>
 nmap <silent>; :Files<CR>
-nmap <silent>gx :Open<CR>
+
+if has('mac')
+    nmap gx :silent execute "!open " . shellescape("<cWORD>")<CR>
+endif
 
 nnoremap <Leader>r :NERDTreeFind<cr>
 nnoremap <Leader>R :NERDTreeToggle<cr>
