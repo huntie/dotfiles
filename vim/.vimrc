@@ -68,24 +68,14 @@ autocmd FileType gitcommit setlocal spell
 
 " Bindings {{{
 
-map <F6> :setlocal spell!<CR>
-map <F12> :Goyo<CR>
-
 nmap q <Nop>
-nmap <silent>; :Files<CR>
+
+map <F6> :setlocal spell!<CR>
 
 if has('mac')
-    nmap gx :silent execute "!open " . shellescape("<cWORD>")<CR>
+  " Go to URL/path under cursor in default app
+  nmap gx :silent execute "!open " . shellescape("<cWORD>")<CR>
 endif
-
-nnoremap <Leader>r :NERDTreeFind<cr>
-nnoremap <Leader>R :NERDTreeToggle<cr>
-nnoremap <Leader>w :ToggleWorkspace<CR>
-
-nnoremap <Leader>fm :NERDTreeFind<cr>:call NERDTreeMoveNode()<cr>
-nnoremap <Leader>fn :NERDTreeFind<cr>:call NERDTreeAddNode()<cr>
-nnoremap <Leader>fc :NERDTreeFind<cr>:call NERDTreeCopyNode()<cr>
-nnoremap <Leader>fd :NERDTreeFind<cr>:call NERDTreeDeleteNode()<cr>
 
 " Automatically create parent dirs when writing a file
 autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
@@ -93,28 +83,46 @@ autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p'
 " Automatically exit if only remaining window is NERDTree
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" goyo
+map <F12> :Goyo<CR>
+
+" fzf
+nmap <silent>; :Files<CR>
+
+" NERDTree
+nnoremap <Leader>r :NERDTreeFind<CR>
+nnoremap <Leader>R :NERDTreeToggle<CR>
+nnoremap <Leader>fm :NERDTreeFind<CR>:call NERDTreeMoveNode()<CR>
+nnoremap <Leader>fn :NERDTreeFind<CR>:call NERDTreeAddNode()<CR>
+nnoremap <Leader>fc :NERDTreeFind<CR>:call NERDTreeCopyNode()<CR>
+nnoremap <Leader>fd :NERDTreeFind<CR>:call NERDTreeDeleteNode()<CR>
+
+" vim-workspace
+nnoremap <Leader>w :ToggleWorkspace<CR>
+
+
 "}}}
 
 " Syntax theme {{{
 
 if exists("&termguicolors")
-    syntax enable
-    set termguicolors
+  syntax enable
+  set termguicolors
 
-    let g:gruvbox_vert_split = 'bg1'
-    let g:gruvbox_sign_column = 'bg0'
-    colorscheme gruvbox
+  let g:gruvbox_vert_split = 'bg1'
+  let g:gruvbox_sign_column = 'bg0'
+  colorscheme gruvbox
 
-    hi Normal guibg=NONE ctermbg=NONE
-    hi CursorLineNr ctermfg=white
-    hi SignColumn guibg=NONE ctermbg=NONE
-    hi clear SpellBad
-    hi SpellBad cterm=underline ctermfg=darkred
+  hi Normal guibg=NONE ctermbg=NONE
+  hi CursorLineNr ctermfg=white
+  hi SignColumn guibg=NONE ctermbg=NONE
+  hi clear SpellBad
+  hi SpellBad cterm=underline ctermfg=darkred
 
-    hi GitGutterAdd ctermfg=green ctermbg=NONE
-    hi GitGutterChange ctermfg=yellow ctermbg=NONE
-    hi GitGutterDelete ctermfg=darkred ctermbg=NONE
-    hi GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
+  hi GitGutterAdd ctermfg=green ctermbg=NONE
+  hi GitGutterChange ctermfg=yellow ctermbg=NONE
+  hi GitGutterDelete ctermfg=darkred ctermbg=NONE
+  hi GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
 endif
 
 "}}}
@@ -122,10 +130,10 @@ endif
 " Plugin options {{{
 
 let g:lightline = {
-  \     'active': {
-  \         'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
-  \         'right': [['lineinfo'], ['percent'], ['fileformat']]
-  \     },
+  \   'active': {
+  \     'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+  \     'right': [['lineinfo'], ['percent'], ['fileformat']]
+  \   },
   \ }
 
 let g:workspace_autosave = 0
