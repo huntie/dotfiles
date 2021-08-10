@@ -17,6 +17,10 @@ set signcolumn=yes
 " Use block cursor in insert mode
 set guicursor=
 
+" Title
+set title
+set titlestring=%t%(\ %m%)\ -\ %{has('nvim')?'Neovim':'Vim'}
+
 " Statusline
 set noshowmode
 set laststatus=2
