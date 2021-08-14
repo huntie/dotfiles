@@ -25,9 +25,10 @@ set laststatus=2
 set smartcase
 set hlsearch
 
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+if executable('rg')
+  " Use ripgrep over grep
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
+  set grepformat=%f:%l:%c:%m
 endif
 
 " Panes
@@ -143,9 +144,13 @@ let g:workspace_undodir = $HOME . '/.vim/undo'
 let g:ctrlsf_default_root = 'project'
 let g:ctrlsf_extra_root_markers = ['Session.vim']
 let g:ctrlsf_search_mode = 'async'
-let g:ctrlsf_extra_backend_args = {
-  \   'ag': '--hidden --ignore .git --ignore node_modules'
-  \ }
+let g:ctrlsf_ignore_dir = ['.git', 'node_modules', 'deps', 'tmp', 'log']
+if executable('rg')
+  let g:ctrlsf_ackprg = 'rg'
+  let g:ctrlsf_extra_backend_args = {
+    \   'rg': '--hidden --no-ignore'
+    \ }
+endif
 
 let g:blamer_enabled = 1
 let g:blamer_template = '<committer> (<committer-time>) • <summary>'
