@@ -5,29 +5,24 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
+if has('nvim')
+  let g:plug_home = stdpath('data') . '/plugged'
+endif
+
+call plug#begin()
 
 Plug 'airblade/vim-gitgutter'
 Plug 'airblade/vim-rooter'
-Plug 'beloglazov/vim-textobj-quotes'
 Plug 'christoomey/vim-system-copy'
-Plug 'dag/vim-fish'
-Plug 'darfink/vim-plist'
 Plug 'cohama/lexima.vim'
 Plug 'dyng/ctrlsf.vim'
-Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'jreybert/vimagit'
-Plug 'jparise/vim-graphql'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'kana/vim-textobj-user'
 Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
-Plug 'pangloss/vim-javascript'
 Plug 'reedes/vim-colors-pencil'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
@@ -37,6 +32,17 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
+
+" Text objects
+Plug 'kana/vim-textobj-user'
+Plug 'beloglazov/vim-textobj-quotes'
+
+" Filetype specific
+Plug 'dag/vim-fish', { 'for': 'fish' }
+Plug 'darfink/vim-plist', { 'for': 'plist' }
+Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
+Plug 'jparise/vim-graphql', { 'for': 'graphql' }
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 
 if has('nvim')
     Plug 'APZelos/blamer.nvim'
