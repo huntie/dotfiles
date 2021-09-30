@@ -157,7 +157,7 @@ if executable('rg')
 endif
 
 let g:blamer_enabled = 1
-let g:blamer_template = '<committer> (<committer-time>) • <summary>'
+let g:blamer_template = '<author> (<committer-time>) • <summary>'
 
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
