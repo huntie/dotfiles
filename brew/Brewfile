@@ -15,7 +15,6 @@ mas '1Password', id: 443987910
 # Command line apps
 
 brew 'bat'
-brew 'clang-format'
 brew 'composer'
 brew 'confd'
 brew 'docker'
@@ -49,7 +48,6 @@ brew 'ranger'
 brew 'reattach-to-user-namespace'
 brew 'ripgrep'
 brew 'rustup'
-brew 'sc-im'
 brew 'sqlite'
 brew 'stow'
 brew 'terminal-notifier'
