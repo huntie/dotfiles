@@ -90,7 +90,7 @@ mas 'Xcode', id: 497799835
 # cask 'discord'
 # cask 'keybase'
 # cask 'notion'
-# mas 'NordVPN IKE', id: 1116599239
+# mas 'NordVPN', id: 905953485
 # mas 'OneDrive', id: 823766827
 
 # JDK
