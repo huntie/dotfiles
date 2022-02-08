@@ -13,6 +13,7 @@ function extract --description 'Extract an archive into a new directory'
     if [ -f $archive ]
         switch $archive
             case *.zip
+            case *.ipa
                 unzip $archive -d $outdir
             case *.tar.gz
                 tar xf $archive -C $outdir
