@@ -7,6 +7,9 @@ export PATH=$(python3 -m site --user-base)/bin:$PATH
 # Composer
 export PATH=$HOME/.composer/vendor/bin:$PATH
 
+# ripgrep
+export RIPGREP_CONFIG_PATH=$HOME/.config/ripgrep/rc
+
 # Rust
 source "$HOME/.cargo/env"
 

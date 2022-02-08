@@ -1,0 +1,8 @@
+# Match colours to ag (see https://bit.ly/3GCni7g)
+--colors=line:fg:yellow
+--colors=line:style:bold
+--colors=path:fg:green
+--colors=path:style:bold
+--colors=match:fg:black
+--colors=match:bg:yellow
+--colors=match:style:nobold
