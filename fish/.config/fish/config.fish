@@ -53,6 +53,7 @@ if [ (uname) = 'Darwin' ]
     alias setclip pbcopy
     alias getclip pbpaste
 
+    abbr -a brewdeps 'brew deps --tree --installed'
     abbr -a tldr 'tldr --platform linux'
     abbr -a tower gittower
 else
