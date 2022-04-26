@@ -7,6 +7,7 @@ set -x EDITOR vim
 if type -q nvim
     set -x EDITOR nvim
     abbr -a vim nvim
+    abbr -a vimdiff 'nvim -d'
 end
 
 # Repaint screen upon exiting less
