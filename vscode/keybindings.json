@@ -29,6 +29,10 @@
         "command": "workbench.action.replaceInFiles"
     },
     {
+        "key": "shift+cmd+h",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
         "key": "shift+cmd+d",
         "command": "-workbench.view.debug"
     },
