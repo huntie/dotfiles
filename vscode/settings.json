@@ -51,6 +51,7 @@
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.scrollback": 10000,
     "window.title": "${activeEditorShort}${separator}${rootName}",
     "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
