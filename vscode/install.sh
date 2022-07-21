@@ -9,5 +9,6 @@ code --install-extension malmaud.tmux
 code --install-extension marp-team.marp-vscode
 code --install-extension mikestead.dotenv
 code --install-extension pnp.polacode
+code --install-extension ryuta46.multi-command
 code --install-extension sleistner.vscode-fileutils
 code --install-extension wmaurer.change-case

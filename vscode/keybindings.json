@@ -33,6 +33,22 @@
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
+        "key": "shift+cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelFocus"
+    },
+    {
+        "key": "shift+cmd+j",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.focusPanel"
+            ]
+        },
+        "when": "!panelFocus"
+    },
+    {
         "key": "shift+cmd+d",
         "command": "-workbench.view.debug"
     },
