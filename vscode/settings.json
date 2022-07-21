@@ -3,7 +3,7 @@
     "editor.cursorBlinking": "phase",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.find.addExtraSpaceOnTop": false,
-    "editor.find.seedSearchStringFromSelection": true,
+    "editor.find.seedSearchStringFromSelection": "selection",
     "editor.fontFamily": "'Native', 'Source Code Pro', monospace",
     "editor.formatOnPaste": false,
     "editor.highlightActiveIndentGuide": false,
@@ -53,6 +53,7 @@
     "terminal.integrated.lineHeight": 1.2,
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.scrollback": 10000,
+    "window.newWindowDimensions": "inherit",
     "window.title": "${activeEditorShort}${separator}${rootName}",
     "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
