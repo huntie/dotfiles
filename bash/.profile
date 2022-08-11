@@ -1,5 +1,6 @@
 # Homebrew (macOS)
 export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # pip
 export PATH=$(python3 -m site --user-base)/bin:$PATH

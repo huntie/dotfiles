@@ -16,7 +16,8 @@ set -x LESS r
 # Highlight color for grep matches
 set -x GREP_COLOR '1;32'
 
-# Disable Homebrew auto update
+# Homebrew options
+set -x HOMEBREW_NO_ANALYTICS 1
 set -x HOMEBREW_NO_AUTO_UPDATE 1
 
 # Perform fzf searches using fd, with options
