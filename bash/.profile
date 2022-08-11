@@ -12,7 +12,9 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 export RIPGREP_CONFIG_PATH=$HOME/.config/ripgrep/rc
 
 # Rust
-source "$HOME/.cargo/env"
+if [ -f "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
 
 # Android SDK (macOS)
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
