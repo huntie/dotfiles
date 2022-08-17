@@ -29,6 +29,9 @@ set -x FZF_LEGACY_KEYBINDINGS 0
 set -x FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_OPEN_COMMAND $FZF_DEFAULT_COMMAND
 
+# ripgrep
+set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgrep/rc
+
 if [ -n $VIM ]
     # Explicitly set 24-bit colors in NeoVim terminal windows
     # https://github.com/neovim/neovim/issues/10836

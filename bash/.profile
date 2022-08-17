@@ -1,18 +1,13 @@
 # Homebrew (macOS)
 export PATH=/usr/local/sbin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
-
-# pip
-export PATH=$(python3 -m site --user-base)/bin:$PATH
+export PATH=$HOME/homebrew/bin:$PATH
 
 # Composer
 export PATH=$HOME/.composer/vendor/bin:$PATH
 
-# ripgrep
-export RIPGREP_CONFIG_PATH=$HOME/.config/ripgrep/rc
-
 # Rust
-if [ -f "$HOME/.cargo/env" ]; then
+if [ -f $HOME/.cargo/env ]; then
     source "$HOME/.cargo/env"
 fi
 
@@ -23,6 +18,3 @@ export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 # fastlane (macOS)
 export PATH=$HOME/.fastlane/bin:$PATH
-
-# Local scripts
-export PATH=$HOME/.local/bin:$PATH
