@@ -1,7 +1,7 @@
 code --install-extension brian-anders.sublime-duplicate-text
 code --install-extension britesnow.vscode-toggle-quotes
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension dinhlife.gruvbox
+code --install-extension jdinhlife.gruvbox
 code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode

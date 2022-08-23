@@ -45,7 +45,7 @@
     "problems.showCurrentInStatus": true,
     "scm.countBadge": "off",
     "scm.diffDecorationsGutterWidth": 2,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.automationProfile.osx": {
       "path": "/bin/zsh"
