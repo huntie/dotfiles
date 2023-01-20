@@ -33,5 +33,7 @@
 	dtc = dt --cached -y
 [core]
 	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
 [gpg]
 	program = /usr/local/bin/gpg
