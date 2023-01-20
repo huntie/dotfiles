@@ -7,6 +7,7 @@ code --install-extension editorconfig.editorconfig
 code --install-extension esbenp.prettier-vscode
 code --install-extension malmaud.tmux
 code --install-extension marp-team.marp-vscode
+code --install-extension meta.sapling-scm
 code --install-extension mikestead.dotenv
 code --install-extension pnp.polacode
 code --install-extension ryuta46.multi-command

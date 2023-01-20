@@ -49,6 +49,10 @@
         "when": "!panelFocus"
     },
     {
+        "key": "shift+cmd+i",
+        "command": "sapling.open-isl"
+    },
+    {
         "key": "shift+cmd+d",
         "command": "-workbench.view.debug"
     },
