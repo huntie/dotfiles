@@ -262,7 +262,7 @@
                                 "key_code": "f1"
                             },
                             "to": {
-                                "key_code": "f1"
+                                "consumer_key_code": "display_brightness_decrement"
                             }
                         },
                         {
@@ -270,7 +270,7 @@
                                 "key_code": "f2"
                             },
                             "to": {
-                                "key_code": "f2"
+                                "consumer_key_code": "display_brightness_increment"
                             }
                         },
                         {
@@ -278,7 +278,7 @@
                                 "key_code": "f3"
                             },
                             "to": {
-                                "key_code": "f3"
+                                "key_code": "mission_control"
                             }
                         },
                         {
@@ -294,7 +294,7 @@
                                 "key_code": "f5"
                             },
                             "to": {
-                                "key_code": "f5"
+                                "key_code": "illumination_decrement"
                             }
                         },
                         {
@@ -302,7 +302,7 @@
                                 "key_code": "f6"
                             },
                             "to": {
-                                "key_code": "f6"
+                                "key_code": "illumination_increment"
                             }
                         },
                         {
@@ -310,7 +310,7 @@
                                 "key_code": "f7"
                             },
                             "to": {
-                                "key_code": "f7"
+                                "consumer_key_code": "rewind"
                             }
                         },
                         {
@@ -318,7 +318,7 @@
                                 "key_code": "f8"
                             },
                             "to": {
-                                "key_code": "f8"
+                                "consumer_key_code": "play_or_pause"
                             }
                         },
                         {
@@ -326,7 +326,7 @@
                                 "key_code": "f9"
                             },
                             "to": {
-                                "key_code": "f9"
+                                "consumer_key_code": "fastforward"
                             }
                         },
                         {
@@ -334,7 +334,7 @@
                                 "key_code": "f10"
                             },
                             "to": {
-                                "key_code": "f10"
+                                "consumer_key_code": "mute"
                             }
                         },
                         {
@@ -342,7 +342,7 @@
                                 "key_code": "f11"
                             },
                             "to": {
-                                "key_code": "f11"
+                                "consumer_key_code": "volume_decrement"
                             }
                         },
                         {
@@ -350,73 +350,10 @@
                                 "key_code": "f12"
                             },
                             "to": {
-                                "key_code": "f12"
+                                "consumer_key_code": "volume_increment"
                             }
                         }
                     ],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 320,
-                        "vendor_id": 9456
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "name": "Das Keyboard",
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "grave_accent_and_tilde"
-                            },
-                            "to": {
-                                "key_code": "non_us_backslash"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_control"
-                            },
-                            "to": {
-                                "key_code": "left_command"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "non_us_backslash"
-                            },
-                            "to": {
-                                "key_code": "grave_accent_and_tilde"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_control"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_control"
-                            },
-                            "to": {
-                                "key_code": "right_command"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": false,
@@ -462,104 +399,7 @@
                     ]
                 }
             ],
-            "fn_function_keys": [
-                {
-                    "from": {
-                        "key_code": "f1"
-                    },
-                    "to": {
-                        "consumer_key_code": "display_brightness_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f2"
-                    },
-                    "to": {
-                        "consumer_key_code": "display_brightness_increment"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f3"
-                    },
-                    "to": {
-                        "key_code": "mission_control"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f4"
-                    },
-                    "to": {
-                        "key_code": "f4"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f5"
-                    },
-                    "to": {
-                        "key_code": "illumination_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f6"
-                    },
-                    "to": {
-                        "key_code": "illumination_increment"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f7"
-                    },
-                    "to": {
-                        "consumer_key_code": "rewind"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f8"
-                    },
-                    "to": {
-                        "consumer_key_code": "play_or_pause"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f9"
-                    },
-                    "to": {
-                        "consumer_key_code": "fastforward"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f10"
-                    },
-                    "to": {
-                        "consumer_key_code": "mute"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f11"
-                    },
-                    "to": {
-                        "consumer_key_code": "volume_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f12"
-                    },
-                    "to": {
-                        "consumer_key_code": "volume_increment"
-                    }
-                }
-            ],
+            "fn_function_keys": [],
             "name": "Default",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
