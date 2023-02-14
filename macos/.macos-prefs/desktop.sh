@@ -32,7 +32,7 @@ defaults write NSGlobalDomain AppleReduceDesktopTinting -int 1
 defaults write com.apple.dock mineffect -string "scale"
 
 # Set Dock orientation
-defaults write com.apple.dock orientation -string "left"
+defaults write com.apple.dock orientation -string "bottom"
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
@@ -41,7 +41,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 
 # Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 40
+defaults write com.apple.dock tilesize -int 45
 
 # Don't animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
