@@ -27,7 +27,6 @@ brew 'fzf'
 brew 'git'
 brew 'git-lfs'
 brew 'gh'
-brew 'gnu-sed'
 brew 'gping'
 brew 'graphviz'
 brew 'grip'
@@ -63,19 +62,15 @@ brew 'yarn'
 
 # Desktop apps
 
-cask 'alfred'
-cask 'authy'
 cask 'appcleaner'
 cask 'docker'
 cask 'dozer'
 cask 'firefox'
-cask 'gimp'
 cask 'gpg-suite-no-mail'
 cask 'hyperswitch'
 cask 'monitorcontrol'
-cask 'pocket-casts'
-cask 'postico'
-cask 'postman'
+cask 'pictogram'
+cask 'raycast'
 cask 'spectacle'
 cask 'spotify'
 cask 'sublime-text'
@@ -90,7 +85,6 @@ mas 'Xcode', id: 497799835
 
 # Personal
 # cask 'discord'
-# cask 'keybase'
 # cask 'notion'
 # mas 'NordVPN', id: 905953485
 # mas 'OneDrive', id: 823766827
@@ -106,5 +100,7 @@ mas 'Xcode', id: 497799835
 # Other dev apps
 # cask 'flipper'
 # cask 'keycastr'
+# cask 'postico'
+# cask 'postman'
 # cask 'react-native-debugger'
 # cask 'sequel-ace'
