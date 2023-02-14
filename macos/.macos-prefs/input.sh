@@ -33,12 +33,6 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Disable "Natural" scroll direction
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
-# Map bottom right corner to right-click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
-
 # - Devices -
 
 # Prevent Photos from opening automatically when devices are plugged in
