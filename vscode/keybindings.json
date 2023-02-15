@@ -103,6 +103,10 @@
         "when": "textInputFocus"
     },
     {
+        "key": "cmd+k l",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
         "key": "shift+alt+1",
         "command": "workbench.action.editorLayoutSingle"
     },
