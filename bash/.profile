@@ -1,8 +1,3 @@
-# Homebrew (macOS)
-export PATH=/usr/local/sbin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=$HOME/homebrew/bin:$PATH
-
 # Composer
 export PATH=$HOME/.composer/vendor/bin:$PATH
 
