@@ -1,6 +1,7 @@
 code --install-extension brian-anders.sublime-duplicate-text
 code --install-extension britesnow.vscode-toggle-quotes
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension github.copilot
 code --install-extension jdinhlife.gruvbox
 code --install-extension eamodio.gitlens
 code --install-extension editorconfig.editorconfig
@@ -11,4 +12,5 @@ code --install-extension mikestead.dotenv
 code --install-extension pnp.polacode
 code --install-extension ryuta46.multi-command
 code --install-extension sleistner.vscode-fileutils
+code --install-extension usernamehw.errorlens
 code --install-extension wmaurer.change-case
