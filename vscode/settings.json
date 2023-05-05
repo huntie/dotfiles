@@ -6,7 +6,7 @@
     "editor.find.seedSearchStringFromSelection": "selection",
     "editor.fontFamily": "'Native', 'Source Code Pro', monospace",
     "editor.formatOnPaste": false,
-    "editor.highlightActiveIndentGuide": false,
+    "editor.inlineSuggest.enabled": true,
     "editor.lineHeight": 20,
     "editor.minimap.showSlider": "always",
     "editor.multiCursorModifier": "ctrlCmd",
