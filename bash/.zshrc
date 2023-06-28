@@ -10,6 +10,11 @@ if [[ -n $VSCODE_ZSH_INIT_COMMAND ]]; then
     eval "$VSCODE_ZSH_INIT_COMMAND"
 fi
 
+# jenv
+if [[ -d $HOME/.jenv/shims ]]; then
+    eval "$(jenv init -)"
+fi
+
 # rbenv (zsh)
 if [[ -f $HOME/.rbenv/bin/rbenv ]]; then
     eval "$($HOME/.rbenv/bin/rbenv init - zsh)"

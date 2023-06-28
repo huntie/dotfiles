@@ -21,12 +21,6 @@ if [[ -d $HOME/.fastlane/bin ]]; then
     export PATH=$HOME/.fastlane/bin:$PATH
 fi
 
-# jenv
-if [[ -d $HOME/.jenv/bin ]]; then
-    export PATH="$HOME/.jenv/bin:$PATH"
-    eval "$(jenv init -)"
-fi
-
 # Rust
 if [ -f $HOME/.cargo/env ]; then
     source "$HOME/.cargo/env"
