@@ -5,7 +5,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Set default view style to Column View
-defaults write com.apple.Finder FXPreferredViewStyle clmv
+defaults write com.apple.finder FXPreferredViewStyle clmv
 
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -25,3 +25,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Use Stacks on the Desktop
+defaults write com.apple.finder.DesktopViewSettings.GroupBy -string "Kind"
+defaults write com.apple.finder.DesktopViewSettings.IconViewSettings.arrangeBy -string "dateAdded"
