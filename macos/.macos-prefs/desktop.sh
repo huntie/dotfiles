@@ -62,3 +62,8 @@ defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
 # Disable automatic rearrangement of Spaces
 defaults write com.apple.dock mru-spaces -int 0
+
+# - Hot Corners -
+
+# Set bottom right screen corner to no-op
+defaults write com.apple.dock wvous-br-corner -int 0
