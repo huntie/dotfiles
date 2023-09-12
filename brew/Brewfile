@@ -87,7 +87,7 @@ mas 'Xcode', id: 497799835
 # brew 'optipng'
 
 # JDK
-# cask 'adoptopenjdk/openjdk/adoptopenjdk11'
+# cask 'adoptopenjdk/openjdk/adoptopenjdk17'
 
 # Android
 # cask 'android-sdk'
