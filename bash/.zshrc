@@ -1,18 +1,6 @@
-# Homebrew
-if [[ -f $HOME/homebrew/bin/brew ]]; then
-    eval "$($HOME/homebrew/bin/brew shellenv)"
-elif [[ -f /opt/homebrew/bin/brew ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
 # Hook for VS Code terminal
 if [[ -n $VSCODE_ZSH_INIT_COMMAND ]]; then
     eval "$VSCODE_ZSH_INIT_COMMAND"
-fi
-
-# jenv
-if [[ -d $HOME/.jenv/shims ]]; then
-    eval "$(jenv init -)"
 fi
 
 # rbenv (zsh)

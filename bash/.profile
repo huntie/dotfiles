@@ -26,6 +26,25 @@ if [[ -d $HOME/.fastlane/bin ]]; then
     export PATH=$HOME/.fastlane/bin:$PATH
 fi
 
+# Homebrew
+if [[ -f $HOME/homebrew/bin/brew ]]; then
+    eval "$($HOME/homebrew/bin/brew shellenv)"
+elif [[ -f /opt/homebrew/bin/brew ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# jenv
+if [[ -d $HOME/.jenv/shims ]]; then
+    eval "$(jenv init -)"
+fi
+
+# JetBrains Toolbox
+# Note: This enables the `studio` launcher command for Android Studio, which
+# will inherit the env variables from the current session.
+if [[ -d $HOME/Library/Application\ Support/JetBrains/Toolbox/scripts ]]; then
+    export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH
+fi
+
 # Rust
 if [ -f $HOME/.cargo/env ]; then
     source "$HOME/.cargo/env"
