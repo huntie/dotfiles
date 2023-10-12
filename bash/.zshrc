@@ -4,6 +4,6 @@ if [[ -n $VSCODE_ZSH_INIT_COMMAND ]]; then
 fi
 
 # rbenv (zsh)
-if [[ -f $HOME/.rbenv/bin/rbenv ]]; then
-    eval "$($HOME/.rbenv/bin/rbenv init - zsh)"
+if command -v rbenv &> /dev/null; then
+    eval "$(rbenv init - zsh)"
 fi
