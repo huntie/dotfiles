@@ -4,5 +4,5 @@ fisher.fish
 __fzf*.fish
 __z*.fish
 _autopair*.fish
-_nvm*.fish
-nvm.fish
+__bass*
+bass.fish
