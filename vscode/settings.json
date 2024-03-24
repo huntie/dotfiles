@@ -67,6 +67,9 @@
       }
     },
     "terminal.integrated.scrollback": 10000,
+    "vim.handleKeys": {
+        "<C-r>": false
+    },
     "window.newWindowDimensions": "inherit",
     "window.title": "${activeEditorShort}${separator}${rootName}",
     "window.zoomLevel": 0,
