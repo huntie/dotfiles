@@ -53,6 +53,9 @@ abbr -a rand 'openssl rand -base64'
 
 alias sail './vendor/bin/sail'
 
+alias explain 'gh copilot explain'
+alias suggest 'gh copilot suggest'
+
 if [ (uname) = 'Darwin' ]
     alias ls 'ls -F -h -G'
     alias setclip pbcopy
