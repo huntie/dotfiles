@@ -50,6 +50,7 @@ abbr -a ywd 'pwd | setclip'
 abbr -a rsync 'rsync --progress'
 abbr -a npmlist 'npm list -g --depth=0'
 abbr -a rand 'openssl rand -base64'
+abbr -a nvm fnm
 
 alias sail './vendor/bin/sail'
 

@@ -1,3 +1,10 @@
+# Homebrew
+if [[ -f $HOME/homebrew/bin/brew ]]; then
+    eval "$($HOME/homebrew/bin/brew shellenv)"
+elif [[ -f /opt/homebrew/bin/brew ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # Android SDK
 if [[ -d $HOME/Library/Android/sdk ]]; then
     export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -26,11 +33,10 @@ if [[ -d $HOME/.fastlane/bin ]]; then
     export PATH=$HOME/.fastlane/bin:$PATH
 fi
 
-# Homebrew
-if [[ -f $HOME/homebrew/bin/brew ]]; then
-    eval "$($HOME/homebrew/bin/brew shellenv)"
-elif [[ -f /opt/homebrew/bin/brew ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+# fnm (Fast Node Manager)
+if [[ -f $HOMEBREW_PREFIX/bin/fnm ]]; then
+    export PATH=$HOME/Library/Application\ Support/fnm:$PATH
+    eval "`fnm env`"
 fi
 
 # jenv
@@ -44,11 +50,6 @@ fi
 if [[ -d $HOME/Library/Application\ Support/JetBrains/Toolbox/scripts ]]; then
     export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH
 fi
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Rust
 if [ -f $HOME/.cargo/env ]; then
