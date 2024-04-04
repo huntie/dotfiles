@@ -41,7 +41,8 @@ fi
 
 # jenv
 if [[ -d $HOME/.jenv/shims ]]; then
-    eval "$(jenv init -)"
+    eval "$(jenv init - --no-rehash)"
+    (jenv rehash &) 2> /dev/null
 fi
 
 # JetBrains Toolbox
