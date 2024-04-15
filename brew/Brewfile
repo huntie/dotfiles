@@ -1,6 +1,4 @@
-tap 'homebrew/core'
 tap 'homebrew/services'
-tap 'homebrew/cask'
 
 cask_args appdir: '/Applications', require_sha: true
 
