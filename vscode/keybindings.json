@@ -49,6 +49,11 @@
         "when": "!panelFocus"
     },
     {
+        "key": "cmd+d",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
         "key": "shift+cmd+d",
         "command": "-workbench.view.debug"
     },
