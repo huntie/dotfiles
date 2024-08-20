@@ -92,6 +92,7 @@ mas 'Xcode', id: 497799835
 # cask 'android-sdk'
 # cask 'android-studio'
 # cask 'android-platform-tools'
+# brew 'pidcat'
 
 # Backend dev
 # brew 'composer'
