@@ -43,7 +43,6 @@ Plug 'dag/vim-fish', { 'for': 'fish' }
 Plug 'darfink/vim-plist', { 'for': 'plist' }
 Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 
 if has('nvim')
     Plug 'APZelos/blamer.nvim'
