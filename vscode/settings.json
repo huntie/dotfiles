@@ -1,5 +1,5 @@
 {
-  "breadcrumbs.enabled": false,
+  "debug.toolBarLocation": "commandCenter",
   "editor.cursorBlinking": "phase",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.find.addExtraSpaceOnTop": false,
@@ -8,6 +8,7 @@
   "editor.formatOnPaste": false,
   "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 20,
+  "editor.minimap.showRegionSectionHeaders": false,
   "editor.minimap.showSlider": "always",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderLineHighlight": "gutter",
@@ -42,12 +43,12 @@
   "git.allowForcePush": true,
   "git.autoStash": true,
   "git.decorations.enabled": false,
+  "git.openRepositoryInParentFolders": "always",
   "problems.decorations.enabled": false,
   "problems.showCurrentInStatus": true,
   "scm.countBadge": "off",
   "scm.diffDecorationsGutterWidth": 2,
   "telemetry.telemetryLevel": "off",
-  "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.automationProfile.osx": {
     "path": "/bin/zsh"
   },
@@ -123,5 +124,6 @@
   "workbench.editor.splitOnDragAndDrop": false,
   "workbench.iconTheme": null,
   "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "zenMode.fullScreen": false
 }
