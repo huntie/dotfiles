@@ -1,7 +1,7 @@
 function fish_prompt
     set -l git_branch (git symbolic-ref --short HEAD 2> /dev/null)
 
-    set_color 828282
+    set_color white
     echo -n "$USER "(prompt_pwd)' '
 
     if [ -n "$git_branch" ]
