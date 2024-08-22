@@ -42,8 +42,6 @@
   "git.allowForcePush": true,
   "git.autoStash": true,
   "git.decorations.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.statusBar.enabled": false,
   "problems.decorations.enabled": false,
   "problems.showCurrentInStatus": true,
   "scm.countBadge": "off",
