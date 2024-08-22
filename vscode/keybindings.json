@@ -125,6 +125,10 @@
     "command": "-workbench.action.replaceInFiles"
   },
   {
+    "key": "shift+cmd+i",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
     "key": "cmd+k l",
     "command": "workbench.files.action.showActiveFileInExplorer"
   },
