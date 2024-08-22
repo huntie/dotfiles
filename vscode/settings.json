@@ -58,6 +58,7 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.profiles.osx": {
     "fish": {
       "path": "/bin/zsh",
