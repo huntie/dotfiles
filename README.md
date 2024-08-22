@@ -26,3 +26,13 @@ Files are organised by individual application, which can be selectively linked t
 - [Add keybindings for Sublime-like split layouts](https://github.com/huntie/dotfiles/commit/59ae2c30ee83cf4a0f78c65f3ba21dac5fb41ec8#diff-c600edf6ce0739a94a591d68b4a42d84b76a117e0395a1bb88c36aa5ae9024d7)
 - [Enable Emmet for additional languages (JSX), set expand shortcut](https://github.com/huntie/dotfiles/commit/90d8619c9510d4969bf8ff277205dd94275f3ff0#diff-c600edf6ce0739a94a591d68b4a42d84b76a117e0395a1bb88c36aa5ae9024d7)
 - [Disable auto-reveal of active file, add reveal file binding](https://github.com/huntie/dotfiles/commit/72ede826b756796d95e332916062cdc542c5eff2#diff-c600edf6ce0739a94a591d68b4a42d84b76a117e0395a1bb88c36aa5ae9024d7)
+
+## Notes on terminal/app colours
+
+- iTerm2 may over-saturate colours if the P3 colour space is enabled: https://gitlab.com/gnachman/iterm2/-/issues/9652.
+
+See previous commits related to colour fixes:
+
+- [vscode: Disable aggressive minimum terminal contrast](https://github.com/huntie/dotfiles/commit/6c9f4bbec5068ab7bddf7e621d552f2f8c7e84a2)
+- [fish, tmux: Add COLORTERM override to fix colors in Vim terminal](https://github.com/huntie/dotfiles/commit/77993fcff44c31616b53c9fd4234d33147548a23)
+- [tmux: Add 256color override for iTerm](https://github.com/huntie/dotfiles/commit/4857ce1daa5d167eb21c930eae0b68881cd776b9)
