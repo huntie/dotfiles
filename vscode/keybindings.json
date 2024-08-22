@@ -1,126 +1,146 @@
 [
-    {
-        "key": "shift+cmd+o",
-        "command": "-workbench.action.gotoSymbol"
+  // #region Commands
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "shift+cmd+f",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "shift+cmd+f",
+    "command": "-workbench.action.findInFiles"
+  },
+  {
+    "key": "cmd+e",
+    "command": "emmet.expandAbbreviation"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  },
+  // #endregion
+  // #region Text selection
+  {
+    "key": "ctrl+right",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "cursorWordPartRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "cursorWordPartStartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "cursorWordPartStartLeftSelect",
+    "when": "textInputFocus"
+  },
+  // #endregion
+  // #region Text manipulation
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.duplicateSelection"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "-workbench.view.debug"
+  },
+  {
+    "key": "shift+delete",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  // #endregion
+  // #region Code navigation
+  {
+    "key": "cmd+g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "cmd+g",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.navigateBack"
+  },
+  // #endregion
+  // #region Bottom panel
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "panelFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "workbench.action.toggleMaximizedPanel",
+        "workbench.action.focusPanel"
+      ]
     },
-    {
-        "key": "shift+cmd+o",
-        "command": "workbench.action.quickOpen"
-    },
-    {
-        "key": "shift+cmd+o",
-        "command": "workbench.action.quickOpenNavigateNextInFilePicker",
-        "when": "inFilesPicker && inQuickOpen"
-    },
-    {
-        "key": "cmd+r",
-        "command": "workbench.action.gotoSymbol"
-    },
-    {
-        "key": "shift+cmd+f",
-        "command": "-workbench.action.findInFiles"
-    },
-    {
-        "key": "shift+cmd+h",
-        "command": "-workbench.action.replaceInFiles"
-    },
-    {
-        "key": "shift+cmd+f",
-        "command": "workbench.action.replaceInFiles"
-    },
-    {
-        "key": "shift+cmd+h",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "shift+cmd+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "panelFocus"
-    },
-    {
-        "key": "shift+cmd+j",
-        "command": "extension.multiCommand.execute",
-        "args": {
-            "sequence": [
-                "workbench.action.toggleMaximizedPanel",
-                "workbench.action.focusPanel"
-            ]
-        },
-        "when": "!panelFocus"
-    },
-    {
-        "key": "cmd+d",
-        "command": "workbench.action.terminal.split",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+cmd+d",
-        "command": "-workbench.view.debug"
-    },
-    {
-        "key": "shift+cmd+d",
-        "command": "editor.action.duplicateSelection"
-    },
-    {
-        "key": "alt+cmd+f",
-        "command": "-editor.action.startFindReplaceAction"
-    },
-    {
-        "key": "cmd+g",
-        "command": "-editor.action.nextMatchFindAction",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+g",
-        "command": "workbench.action.gotoLine"
-    },
-    {
-        "key": "shift+delete",
-        "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+e",
-        "command": "-actions.findWithSelection"
-    },
-    {
-        "key": "cmd+e",
-        "command": "emmet.expandAbbreviation"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "cursorWordPartRight",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+right",
-        "command": "cursorWordPartRightSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+left",
-        "command": "cursorWordPartStartLeft",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+left",
-        "command": "cursorWordPartStartLeftSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "cmd+k l",
-        "command": "workbench.files.action.showActiveFileInExplorer"
-    },
-    {
-        "key": "shift+alt+1",
-        "command": "workbench.action.editorLayoutSingle"
-    },
-    {
-        "key": "shift+alt+2",
-        "command": "workbench.action.editorLayoutTwoColumns"
-    },
-    {
-        "key": "shift+alt+3",
-        "command": "workbench.action.editorLayoutThreeColumns"
-    }
+    "when": "!panelFocus"
+  },
+  // #endregion
+  // #region Terminal
+  {
+    "key": "cmd+d",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  // #endregion
+  // #region Sidebars
+  {
+    "key": "shift+cmd+h",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "cmd+k l",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  // #endregion
+  // #region Layout splits
+  {
+    "key": "shift+alt+1",
+    "command": "workbench.action.editorLayoutSingle"
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "workbench.action.editorLayoutTwoColumns"
+  },
+  {
+    "key": "shift+alt+3",
+    "command": "workbench.action.editorLayoutThreeColumns"
+  }
+  // #endregion
 ]
