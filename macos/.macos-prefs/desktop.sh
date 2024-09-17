@@ -21,10 +21,18 @@ defaults write com.apple.systemuiserver menuExtras -array \
     "/System/Library/CoreServices/Menu Extras/Battery.menu" \
     "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
+# - Desktop -
+
+# Hide desktop items by default
+defaults write com.apple.WindowManager StandardHideDesktopIcons -int 1
+
 # - Windows -
 
 # Disable wallpaper tinting in windows
 defaults write NSGlobalDomain AppleReduceDesktopTinting -int 1
+
+# Disable margins around tiled windows
+defaults write com.apple.WindowManager EnableTiledWindowMargins -int 0
 
 # - Dock -
 
