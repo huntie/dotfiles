@@ -36,7 +36,7 @@ fi
 # fnm (Fast Node Manager)
 if [[ -f $HOMEBREW_PREFIX/bin/fnm ]]; then
     export PATH=$HOME/Library/Application\ Support/fnm:$PATH
-    eval "`fnm env`"
+    eval "$(fnm env --use-on-cd --shell bash)"
 fi
 
 # jenv
