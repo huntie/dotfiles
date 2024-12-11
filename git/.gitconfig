@@ -1,7 +1,7 @@
 [user]
 	name = Alex Hunt
-	email = hello@alexhunt.io
-	signingkey = 144D5AFFA2FB93C3167B5B0C7B78B3A2DCC8FF93
+	email = hello@alexhunt.dev
+	signingkey = 1251AC874D8A26D6FE585FFF25447D819EB34F4C
 [commit]
 	gpgsign = true
 [status]
