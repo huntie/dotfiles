@@ -4,3 +4,10 @@ fisher.fish
 __fzf*.fish
 __z*.fish
 _autopair*.fish
+
+# huntie/dotfiles-fb
+fbs.fish
+rn.fish
+rnt.fish
+xjs.fish
+xjst.fish
