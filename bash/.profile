@@ -51,8 +51,3 @@ fi
 if [[ -d $HOME/Library/Application\ Support/JetBrains/Toolbox/scripts ]]; then
     export PATH=$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH
 fi
-
-# Rust
-if [ -f $HOME/.cargo/env ]; then
-    source "$HOME/.cargo/env"
-fi

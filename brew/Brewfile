@@ -13,7 +13,6 @@ cask '1password'
 # Command line apps
 
 brew 'bat'
-brew 'fastmod'
 brew 'fd'
 brew 'findutils'
 brew 'fish'
@@ -23,14 +22,12 @@ brew 'git'
 brew 'git-lfs'
 brew 'gh'
 brew 'gping'
-brew 'graphviz'
 brew 'grip'
 brew 'htop'
 brew 'jq'
 brew 'lnav'
 brew 'm-cli'
 brew 'ncdu'
-brew 'neofetch'
 brew 'neovim'
 brew 'nmap'
 brew 'ossp-uuid'
@@ -41,14 +38,11 @@ brew 'python'
 brew 'ranger'
 brew 'reattach-to-user-namespace'
 brew 'ripgrep'
-brew 'rustup'
 brew 'sqlite'
 brew 'stow'
-brew 'terminal-notifier'
 brew 'tldr'
 brew 'tmux'
 brew 'tree'
-brew 'vim'
 brew 'watchman'
 brew 'wget'
 brew 'yarn'
@@ -56,11 +50,8 @@ brew 'yarn'
 # Desktop apps
 
 cask 'appcleaner'
-cask 'docker'
 cask 'dozer'
-cask 'firefox'
 cask 'gpg-suite-no-mail'
-cask 'hyperswitch'
 cask 'monitorcontrol'
 cask 'pictogram'
 cask 'raycast'
@@ -68,19 +59,19 @@ cask 'spectacle'
 cask 'spotify'
 cask 'sublime-text'
 cask 'tower'
-cask 'transmission'
 cask 'visual-studio-code'
-cask 'vlc'
 mas 'iA Writer', id: 775737590
 mas 'Microsoft To Do', id: 1274495053
-mas 'WhatsApp Desktop', id: 1147396723
 mas 'Xcode', id: 497799835
 
 # Personal
 # cask 'discord'
 # cask 'notion'
+# cask 'transmission'
+# cask 'vlc'
 # mas 'NordVPN', id: 905953485
 # mas 'OneDrive', id: 823766827
+# mas 'WhatsApp Desktop', id: 1147396723
 
 # Image utils
 # brew 'imagemagick'
@@ -103,6 +94,8 @@ mas 'Xcode', id: 497799835
 # brew 'mailhog'
 
 # Other dev apps
+# brew 'fastmod'
+# brew 'graphviz'
 # cask 'keycastr'
 # cask 'postico'
 # cask 'postman'
