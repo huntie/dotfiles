@@ -8,6 +8,25 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Disable Caps Lock accidental keystroke prevention (remove 100ms delay)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "hold_down_milliseconds": 100,
+                                        "key_code": "caps_lock"
+                                    },
+                                    { "key_code": "vk_none" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "manipulators": [
                             {
                                 "description": "Map home to left_command+left_arrow",
