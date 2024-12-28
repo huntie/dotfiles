@@ -1,0 +1,25 @@
+command = /bin/zsh -l -c "tmux ls | grep attached > /dev/null && tmux || tmux attach || tmux; exit"
+
+confirm-close-surface = false
+mouse-scroll-multiplier = 2
+
+theme = GruvboxDark
+adjust-cell-height = 20%
+font-family = Native
+font-size = 13
+
+window-width = 140
+window-height = 32
+window-padding-x = 15
+window-padding-y = 12,14
+window-padding-balance = true
+
+cursor-style = block
+shell-integration-features = no-cursor
+mouse-hide-while-typing = true
+
+macos-titlebar-style = tabs
+
+macos-icon = custom-style
+macos-icon-ghost-color = ebdbb2
+macos-icon-screen-color = 282828
