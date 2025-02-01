@@ -154,6 +154,24 @@
                         ]
                     },
                     {
+                        "manipulators": [
+                            {
+                                "description": "Map f4 to left_command+spacebar",
+                                "from": {
+                                    "key_code": "f4",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Map left_cmd+tab to mission_control (Logitech MX Master 3)",
                         "manipulators": [
                             {
@@ -196,7 +214,7 @@
                         },
                         {
                             "from": { "key_code": "f4" },
-                            "to": [{ "key_code": "vk_none" }]
+                            "to": [{ "key_code": "f4" }]
                         },
                         {
                             "from": { "key_code": "f5" },
