@@ -51,8 +51,8 @@ brew 'yarn'
 # Desktop apps
 
 cask 'appcleaner'
-cask 'dozer'
 cask 'gpg-suite-no-mail'
+cask 'hiddenbar'
 cask 'monitorcontrol'
 cask 'pictogram'
 cask 'raycast'
