@@ -163,8 +163,6 @@ let g:blamer_template = '<author> (<committer-time>) • <summary>'
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 
-let g:deoplete#enable_at_startup = 1
-
 let g:lsc_server_commands = {
  \  'javascript': {
  \    'command': 'typescript-language-server --stdio',

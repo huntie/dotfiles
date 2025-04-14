@@ -47,7 +47,6 @@ Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 if has('nvim')
     Plug 'APZelos/blamer.nvim'
     Plug 'natebosch/vim-lsc'
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 
 call plug#end()
