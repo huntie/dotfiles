@@ -1,5 +1,3 @@
-tap 'homebrew/services'
-
 cask_args appdir: '/Applications', require_sha: true
 
 # Core/high-priority dependencies
@@ -53,17 +51,14 @@ brew 'yarn'
 cask 'appcleaner'
 cask 'gpg-suite-no-mail'
 cask 'hiddenbar'
-cask 'monitorcontrol'
 cask 'pictogram'
 cask 'raycast'
 cask 'spectacle'
 cask 'spotify'
-cask 'sublime-text'
 cask 'tower'
 cask 'visual-studio-code'
 mas 'iA Writer', id: 775737590
 mas 'Microsoft To Do', id: 1274495053
-mas 'Xcode', id: 497799835
 
 # Personal
 # cask 'discord'
