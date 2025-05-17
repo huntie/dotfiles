@@ -65,14 +65,32 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Map left_shift+insert to left_command+v",
+                                "description": "Map print_screen to left_command+left_shift+5",
                                 "from": {
-                                    "key_code": "insert",
-                                    "modifiers": { "mandatory": "left_shift" }
+                                    "key_code": "print_screen",
+                                    "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "v",
+                                        "key_code": "5",
+                                        "modifiers": ["left_command", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
+                                "description": "Map f4 to left_command+spacebar",
+                                "from": {
+                                    "key_code": "f4",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
                                         "modifiers": ["left_command"]
                                     }
                                 ],
@@ -128,42 +146,6 @@
                                 "to": [
                                     {
                                         "key_code": "non_us_backslash",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "manipulators": [
-                            {
-                                "description": "Map print_screen to left_command+left_shift+5",
-                                "from": {
-                                    "key_code": "print_screen",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": ["left_command", "left_shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "manipulators": [
-                            {
-                                "description": "Map f4 to left_command+spacebar",
-                                "from": {
-                                    "key_code": "f4",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
                                         "modifiers": ["left_command"]
                                     }
                                 ],
