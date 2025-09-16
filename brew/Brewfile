@@ -1,13 +1,16 @@
 cask_args appdir: '/Applications', require_sha: true
 
+brew 'mas'
+
 # Core/high-priority dependencies
 
-brew 'mas'
+cask '1password'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'ghostty'
 cask 'karabiner-elements'
-cask '1password'
+cask 'raycast'
+cask 'rectangle'
 
 # Command line apps
 
@@ -48,12 +51,9 @@ brew 'yarn'
 
 # Desktop apps
 
-cask 'appcleaner'
 cask 'gpg-suite-no-mail'
 cask 'hiddenbar'
 cask 'pictogram'
-cask 'raycast'
-cask 'spectacle'
 cask 'spotify'
 cask 'tower'
 cask 'visual-studio-code'
