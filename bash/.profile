@@ -23,6 +23,11 @@ elif [[ -d /opt/android_ndk ]]; then
     export ANDROID_NDK_REPOSITORY=/opt/android_ndk
 fi
 
+# Bun
+if [[ -d $HOME/.bun/bin ]]; then
+    export PATH=$HOME/.bun/bin:$PATH
+fi
+
 # Composer
 if [[ -d $HOME/.composer/vendor/bin ]]; then
     export PATH=$HOME/.composer/vendor/bin:$PATH
