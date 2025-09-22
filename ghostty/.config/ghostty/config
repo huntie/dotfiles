@@ -3,7 +3,7 @@ command = /bin/zsh -l -c "tmux ls | grep attached > /dev/null && tmux || tmux at
 confirm-close-surface = false
 mouse-scroll-multiplier = 2
 
-theme = GruvboxDark
+theme = Gruvbox Dark
 adjust-cell-height = 20%
 font-family = Native
 font-size = 13
