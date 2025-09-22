@@ -8,8 +8,8 @@ adjust-cell-height = 20%
 font-family = Native
 font-size = 13
 
-window-width = 140
-window-height = 32
+window-width = 136
+window-height = 29
 window-padding-x = 15
 window-padding-y = 12,14
 window-padding-balance = true
