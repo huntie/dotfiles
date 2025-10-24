@@ -83,6 +83,13 @@
   "vim.handleKeys": {
     "<C-r>": false
   },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.rename"],
+      "desc": "Rename symbol (LSP)"
+    }
+  ],
   // #endregion
   // #region Colour theme and customisations
   "workbench.colorTheme": "Gruvbox Minor Dark Medium",
