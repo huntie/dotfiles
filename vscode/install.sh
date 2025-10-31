@@ -1,11 +1,11 @@
 code --install-extension adamsome.vscode-theme-gruvbox-minor
 code --install-extension brian-anders.sublime-duplicate-text
-code --install-extension BriteSnow.vscode-toggle-quotes
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
 code --install-extension GitHub.copilot
 code --install-extension GitHub.copilot-chat
+code --install-extension GitHub.vscode-pull-request-github
 code --install-extension mikestead.dotenv
 code --install-extension mk12.better-git-line-blame
 code --install-extension ryuta46.multi-command

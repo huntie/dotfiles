@@ -1,5 +1,6 @@
 {
   // #region Core settings
+  "chat.commandCenter.enabled": false,
   "debug.toolBarLocation": "commandCenter",
   "editor.cursorBlinking": "phase",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -39,6 +40,9 @@
   "problems.showCurrentInStatus": true,
   "scm.countBadge": "off",
   "scm.diffDecorationsGutterWidth": 2,
+  "search.exclude": {
+    "**/node_modules/**": true
+  },
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.automationProfile.osx": {
     "path": "/bin/zsh"
@@ -76,7 +80,8 @@
   // #region Extensions
   "fileutils.newFile.typeahead.enabled": false,
   "fileutils.newFolder.typeahead.enabled": false,
-  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "openInGitHub.remote.name": "upstream",
   "openInGitHub.useLocalBranch": false,
   "openInGitHub.useLocalLine": true,
   "redhat.telemetry.enabled": false,
@@ -187,7 +192,6 @@
     "editorGroupHeader.tabsBorder": "#3c3836",
     // TABS
     "tab.border": "#28282800",
-    // "tab.activeBorder": "#689d6a",
     "tab.activeBackground": "#3c3836",
     "tab.activeForeground": "#ebdbb2",
     "tab.inactiveForeground": "#a89984",
@@ -284,7 +288,6 @@
     "statusBar.background": "#282828",
     "statusBar.border": "#3c3836",
     "statusBar.foreground": "#ebdbb2",
-    // "statusBar.debuggingForeground": "#282828",
     "statusBar.debuggingBorder": "#28282800",
     "statusBar.noFolderBackground": "#282828",
     "statusBar.noFolderBorder": "#28282800",
