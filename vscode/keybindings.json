@@ -25,6 +25,10 @@
     "key": "cmd+e",
     "command": "-actions.findWithSelection"
   },
+  {
+    "key": "cmd+k s",
+    "command": "workbench.action.files.saveWithoutFormatting"
+  },
   // #endregion
   // #region Text selection
   {
