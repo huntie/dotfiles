@@ -1,5 +1,6 @@
 command = /bin/zsh -l -c "fish; exit"
 quit-after-last-window-closed = true
+auto-update = off
 
 confirm-close-surface = false
 mouse-scroll-multiplier = 2
