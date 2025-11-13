@@ -1,4 +1,5 @@
-command = /bin/zsh -l -c "tmux ls | grep attached > /dev/null && tmux || tmux attach || tmux; exit"
+command = /bin/zsh -l -c "fish; exit"
+quit-after-last-window-closed = true
 
 confirm-close-surface = false
 mouse-scroll-multiplier = 2
