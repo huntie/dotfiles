@@ -65,6 +65,7 @@
     }
   },
   "terminal.integrated.scrollback": 10000,
+  "window.customTitleBarVisibility": "windowed",
   "window.newWindowDimensions": "inherit",
   "window.title": "${activeEditorShort}${separator}${rootName}",
   "workbench.editor.closeEmptyGroups": false,
@@ -73,14 +74,19 @@
   "workbench.iconTheme": null,
   "workbench.layoutControl.enabled": false,
   "workbench.layoutControl.type": "toggles",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "zenMode.fullScreen": false,
+  "zenMode.fullScreen": true,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.restore": false,
   // #endregion
   // #region Extensions
   "fileutils.newFile.typeahead.enabled": false,
   "fileutils.newFolder.typeahead.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
+  "githubPullRequests.pullBranch": "never",
   "openInGitHub.remote.name": "upstream",
   "openInGitHub.useLocalBranch": false,
   "openInGitHub.useLocalLine": true,
