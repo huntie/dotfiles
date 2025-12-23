@@ -186,8 +186,8 @@
                                     {
                                         "identifiers": [
                                             {
-                                                "location_id": 106,
-                                                "is_built_in_keyboard": true
+                                                "is_built_in_keyboard": true,
+                                                "location_id": 110
                                             }
                                         ],
                                         "type": "device_if"
@@ -207,8 +207,8 @@
                                     {
                                         "identifiers": [
                                             {
-                                                "location_id": 106,
-                                                "is_built_in_keyboard": true
+                                                "is_built_in_keyboard": true,
+                                                "location_id": 110
                                             }
                                         ],
                                         "type": "device_if"
@@ -228,8 +228,8 @@
                                     {
                                         "identifiers": [
                                             {
-                                                "location_id": 106,
-                                                "is_built_in_keyboard": true
+                                                "is_built_in_keyboard": true,
+                                                "location_id": 110
                                             }
                                         ],
                                         "type": "device_if"
