@@ -5,6 +5,11 @@ elif [[ -f /opt/homebrew/bin/brew ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# ~/.local/bin/
+if [[ -d $HOME/.local/bin ]]; then
+    export PATH=$HOME/.local/bin:$PATH
+fi
+
 # Android SDK
 if [[ -d $HOME/Library/Android/sdk ]]; then
     export ANDROID_HOME=$HOME/Library/Android/sdk
