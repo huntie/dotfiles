@@ -141,23 +141,6 @@
   {
     "key": "shift+alt+3",
     "command": "workbench.action.editorLayoutThreeColumns"
-  },
-  // #endregion
-  // #region Cursor
-  {
-    "key": "cmd+i",
-    "command": "aipopup.action.modal.generate",
-    "when": "cursor && editorFocus && !composerBarIsVisible"
-  },
-  {
-    "key": "cmd+i",
-    "command": "-composer.startComposerPrompt",
-    "when": "cursor"
-  },
-  {
-    "key": "shift+cmd+k",
-    "command": "-aipopup.action.modal.generate",
-    "when": "cursor && editorFocus && !composerBarIsVisible"
   }
   // #endregion
 ]
