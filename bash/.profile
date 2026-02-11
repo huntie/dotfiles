@@ -64,5 +64,5 @@ fi
 
 # depot_tools (Chromium)
 if [[ -d $HOME/Development/depot_tools ]]; then
-    export PATH=$HOME/Development/depot_tools:$PATH
+    export PATH=$HOME/Development/tools/depot_tools:$PATH
 fi
