@@ -1,4 +1,5 @@
 code --install-extension adamsome.vscode-theme-gruvbox-minor
+code --install-extension anthropic.claude-code
 code --install-extension brian-anders.sublime-duplicate-text
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension EditorConfig.EditorConfig
