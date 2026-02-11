@@ -86,6 +86,7 @@
   "fileutils.newFile.typeahead.enabled": false,
   "fileutils.newFolder.typeahead.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.extendedRange": true,
   "githubPullRequests.pullBranch": "never",
   "openInGitHub.remote.name": "upstream",
   "openInGitHub.useLocalBranch": false,
@@ -342,5 +343,7 @@
     "textLink.activeForeground": "#458588",
     "debugToolBar.background": "#282828"
   }
+  // #endregion
+  // #region Unmerged settings
   // #endregion
 }
