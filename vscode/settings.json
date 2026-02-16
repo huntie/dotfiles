@@ -83,6 +83,7 @@
   "zenMode.restore": false,
   // #endregion
   // #region Extensions
+  "claudeCode.preferredLocation": "sidebar",
   "fileutils.newFile.typeahead.enabled": false,
   "fileutils.newFolder.typeahead.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,

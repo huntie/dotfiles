@@ -141,6 +141,13 @@
   {
     "key": "shift+alt+3",
     "command": "workbench.action.editorLayoutThreeColumns"
+  },
+  // #endregion
+  // #region Claude Code
+  {
+    "key": "cmd+l",
+    "command": "claude-vscode.focus",
+    "when": "editorTextFocus && !config.claudeCode.useTerminal"
   }
   // #endregion
 ]
