@@ -63,6 +63,6 @@ if [[ -d $HOME/Library/Application\ Support/JetBrains/Toolbox/scripts ]]; then
 fi
 
 # depot_tools (Chromium)
-if [[ -d $HOME/Development/depot_tools ]]; then
+if [[ -d $HOME/Development/tools/depot_tools ]]; then
     export PATH=$HOME/Development/tools/depot_tools:$PATH
 fi
