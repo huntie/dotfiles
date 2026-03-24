@@ -52,6 +52,8 @@ abbr -a nvm fnm
 
 alias sail './vendor/bin/sail'
 
+alias claude 'command claude --enable-auto-mode'
+
 alias explain 'gh copilot explain'
 alias suggest 'gh copilot suggest'
 
