@@ -1,0 +1,20 @@
+{
+  "name": "huntie",
+  "owner": {
+    "name": "huntie"
+  },
+  "plugins": [
+    {
+      "name": "huntie-dotfiles",
+      "description": "Personal Claude Code skills and config",
+      "version": "1.0.0",
+      "author": {
+        "name": "huntie"
+      },
+      "source": "./",
+      "skills": [
+        "./skills/"
+      ]
+    }
+  ]
+}
