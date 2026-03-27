@@ -14,7 +14,7 @@ Generate a commit message for the current changes. Follow these steps:
 
 ## Sapling/hg repos
 
-Use `[area]` bracket tag prefixes to categorize the change. Choose the most specific relevant area.
+Use `[area]` bracket tag prefixes to categorize the change. Choose the most specific relevant area by checking the current diff stack and the commit history of the changed files and their parent folders (e.g. `sl log -l 10 path/to/file`).
 
 Format:
 
@@ -46,4 +46,5 @@ Optional longer description if the change is non-trivial.
 - Keep the summary line under 72 characters.
 - Use imperative mood ("Fix bug", not "Fixed bug").
 - Focus on **why**, not just what.
+- In descriptions, write flowing paragraphs — do not insert hard line breaks at a fixed character width.
 - Do not include "Differential Revision" lines — those are managed separately.

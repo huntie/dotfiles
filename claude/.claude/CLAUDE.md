@@ -17,6 +17,7 @@
 ## Commits
 
 - Always use the `/commit-msg` skill to generate commit messages (git or hg/sl).
+- To update commit message fields under hg/sl, use `sl amend --message-field "Field=value"` (not `sl metaedit`). Field values are "Summary" and "Test Plan".
 
 ## Writing style
 
