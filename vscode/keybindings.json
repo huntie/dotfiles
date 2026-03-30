@@ -145,9 +145,18 @@
   // #endregion
   // #region Claude Code
   {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "claude-vscode.focus"
+  },
+  {
     "key": "cmd+l",
     "command": "claude-vscode.focus",
-    "when": "editorTextFocus && !config.claudeCode.useTerminal"
+    "when": "editorHasSelection && editorTextFocus && !config.claudeCode.useTerminal"
   }
   // #endregion
 ]

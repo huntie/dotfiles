@@ -69,6 +69,7 @@
   "window.newWindowDimensions": "inherit",
   "window.title": "${activeEditorShort}${separator}${rootName}",
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.revealIfOpen": true,
   "workbench.editor.showIcons": false,
   "workbench.editor.splitOnDragAndDrop": false,
   "workbench.iconTheme": null,
@@ -84,7 +85,7 @@
   // #endregion
   // #region Extensions
   "claudeCode.initialPermissionMode": "acceptEdits",
-  "claudeCode.preferredLocation": "sidebar",
+  "claudeCode.preferredLocation": "panel",
   "fileutils.newFile.typeahead.enabled": false,
   "fileutils.newFolder.typeahead.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
