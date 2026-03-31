@@ -16,8 +16,33 @@ Using GNU Stow from the dotfiles root:
 
 This symlinks `CLAUDE.md` into `~/.claude/`. The plugin directory is excluded from stow (see `.stow-local-ignore`) because Claude Code cannot traverse directory symlinks outside `~/.claude/`.
 
+## Plugin setup
+
+Register the dotfiles plugin directory as a local marketplace in
+`~/.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "huntie": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/huntie/Development/dotfiles/claude/plugins/huntie-dotfiles"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "huntie-dotfiles@huntie": true
+  }
+}
+```
+
+Then install the plugin:
+
+    /plugin update
+
 ## Syncing skills
 
-After editing skills in the dotfiles repo, copy them to the plugin cache:
+After editing skills in the dotfiles repo, refresh the plugin cache:
 
-    cp -r claude/plugins/huntie-dotfiles/. ~/.claude/plugins/huntie-dotfiles/
+    /plugin update
