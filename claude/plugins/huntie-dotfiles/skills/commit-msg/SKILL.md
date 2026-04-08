@@ -15,6 +15,7 @@ Generate a commit message for the current changes. Follow these steps:
 - Keep the title under 72 characters.
 - Use imperative mood ("Fix bug", not "Fixed bug").
 - Focus on **why**, not just what.
+- Don't use backticks or other Markdown formatting in the title. Formatting is fine in the body/summary.
 - Description is optional — skip for trivial changes. When included, write flowing paragraphs without hard line breaks at a fixed character width.
 
 ## Message style
