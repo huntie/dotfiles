@@ -8,6 +8,16 @@ Files are organised by individual application, which can be selectively linked t
 
     stow -t ~/ git
 
+### Exceptions
+
+Some packages don't use `stow` due to app-specific constraints:
+
+- **Rectangle** — Config file is copied (not symlinked), as Rectangle replaces the file on launch.
+
+        cp -f rectangle/RectangleConfig.json ~/Library/Application\ Support/Rectangle/
+
+- **VS Code** — Manually merged. Extensions are installed via `install.sh`.
+
 ## Highlights
 
 ### fish
