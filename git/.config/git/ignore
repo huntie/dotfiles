@@ -1,3 +1,5 @@
+# Global gitignore — patterns excluded from all repositories.
+
 .DS_Store
 
 # Editor files

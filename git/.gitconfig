@@ -31,8 +31,6 @@
 	r5 = rebase HEAD~5 -i
 	dt = difftool --tool=vimdiff -y
 	dtc = dt --cached -y
-[core]
-	excludesfile = ~/.gitignore
 [init]
 	defaultBranch = main
 [gpg]
