@@ -15,6 +15,7 @@
 ## Code rules
 
 - Before creating a new abstraction, search for existing patterns in the codebase.
+- In Sapling/hg repos, run `hg addremove --similarity 50` after adding, deleting, or moving files. This keeps the working copy status accurate.
 
 ### Android/Kotlin
 
