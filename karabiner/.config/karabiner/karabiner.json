@@ -298,6 +298,15 @@
                     "manipulate_caps_lock_led": false,
                     "mouse_flip_horizontal_wheel": true,
                     "name": "Logitech MX Master 3"
+                },
+                {
+                    "fn_function_keys": [
+                        {
+                            "from": { "key_code": "f5" },
+                            "to": [{ "key_code": "right_option" }]
+                        }
+                    ],
+                    "identifiers": { "is_keyboard": true }
                 }
             ],
             "fn_function_keys": [
