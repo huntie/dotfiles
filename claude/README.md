@@ -7,6 +7,7 @@ Personal Claude Code settings.
 - **CLAUDE.md** - Project rules and workflow conventions
 - **commands/** - User commands
     - `/conflicts` - Resolve merge conflicts in the working tree
+    - `/rebase` - Rebase the current stack onto stable (Mercurial)
 - **plugins/huntie-dotfiles** - Custom skills plugin
     - `/commit-msg` - Generate commit messages
 
