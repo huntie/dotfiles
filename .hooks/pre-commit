@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# #region claude/plugins/huntie-dotfiles
+# Bump the plugin's patch version when any file besides the manifest changes.
+
+PLUGIN_DIR="claude/plugins/huntie-dotfiles"
+MANIFEST="$PLUGIN_DIR/.claude-plugin/marketplace.json"
+
+staged=$(git diff --cached --name-only -- "$PLUGIN_DIR")
+
+if [ -z "$staged" ] || [ "$staged" = "$MANIFEST" ]; then
+    exit 0
+fi
+
+current=$(grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+' "$MANIFEST" | head -1)
+new="${current%.*}.$((${current##*.} + 1))"
+
+sed -i '' "s/$current/$new/" "$MANIFEST"
+git add "$MANIFEST"
+
+echo "Bumped huntie-dotfiles version: $current -> $new"
+
+# #endregion

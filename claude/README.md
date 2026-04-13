@@ -5,6 +5,8 @@ Personal Claude Code settings.
 ## Contents
 
 - **CLAUDE.md** - Project rules and workflow conventions
+- **commands/** - User commands
+    - `/conflicts` - Resolve merge conflicts in the working tree
 - **plugins/huntie-dotfiles** - Custom skills plugin
     - `/commit-msg` - Generate commit messages
 
@@ -14,7 +16,7 @@ Using GNU Stow from the dotfiles root:
 
     stow -t ~/ claude
 
-This symlinks `CLAUDE.md` into `~/.claude/`. The plugin directory is excluded from stow (see `.stow-local-ignore`) because Claude Code cannot traverse directory symlinks outside `~/.claude/`.
+This symlinks `CLAUDE.md` and `commands/` into `~/.claude/`. The plugin directory is excluded from stow (see `.stow-local-ignore`) because Claude Code cannot load plugins from symlinked directories.
 
 ## Plugin setup
 

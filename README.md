@@ -18,6 +18,12 @@ Some packages don't use `stow` due to app-specific constraints:
 
 - **VS Code** — Manually merged. Extensions are installed via `install.sh`.
 
+### Hooks
+
+Enable the repo's Git hooks to auto-bump the Claude Code plugin version on commit:
+
+    git config core.hooksPath .hooks
+
 ## Highlights
 
 ### fish
