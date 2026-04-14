@@ -1,3 +1,7 @@
+## Output
+
+- When pointing to a specific code location, use the `/code-frame` skill. Always read the file first — never rely on prior search output for surrounding context lines.
+
 ## Writing style
 
 - Use American English for artifacts: code, comments, and docs.

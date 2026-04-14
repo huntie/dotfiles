@@ -1,6 +1,7 @@
 ---
 name: code-frame
 description: Use when surfacing a specific code location in CLI/terminal output — errors, investigation findings, code review comments, or "look at line N" pointers. Formats the location like Jest, Babel, and ESLint do: file path with line:column, then 2-3 lines of context with a caret marking the target line. Use whenever you would otherwise write "see foo.ts line 42" — show the frame instead.
+user-invocable: false
 ---
 
 # Code Frame Output
@@ -16,23 +17,7 @@ Format inline code pointers the way JS tooling does: a file header with `path:li
 
 Do **not** use for: multi-file diffs (use a diff format), whole-function listings (use a fenced code block), or output that will be rendered as Markdown in a rich UI (the ASCII gutter is for monospace terminals).
 
-## Usage
-
-Prefer the bundled script — it handles tab expansion, gutter alignment, and edge-of-file trimming, and avoids pulling the file into context.
-
-```bash
-scripts/code_frame.py <path> <line> [--col N] [--span N] [--context N]
-```
-
-- `path` — source file (required)
-- `line` — 1-indexed target line (required)
-- `--col` — 1-indexed column; omit to skip the caret row
-- `--span` — caret width in characters (default 1)
-- `--context` — lines above/below (default 2)
-
-Run it, paste stdout into your reply inside a fenced block. Exits non-zero with a stderr message if the file or line is unreadable — fall back to hand-formatting using the spec below, or to a bare `path:line:column` if the file genuinely can't be read.
-
-## Format spec
+## Format
 
 ```
   src/parser/tokens.ts:42:11
@@ -97,6 +82,6 @@ Rules:
 
 ## Notes
 
-- This is purely a presentation format. Do not invent line content — the script reads the file directly; if hand-formatting, read the file first.
+- This is purely a presentation format. Do not invent line content — read the file first to get the real surrounding lines.
 - If the file isn't readable (deleted, generated, remote), fall back to `path:line:column` on its own. Don't fabricate context.
 - Keep frames tight. The point is fast scanning in a terminal, not a full code listing.
