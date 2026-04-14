@@ -1,7 +1,6 @@
 ---
 name: commit-msg
 description: Generate a commit message for the current changes
-disable-model-invocation: true
 ---
 
 Generate a commit message for the current changes. Follow these steps:
