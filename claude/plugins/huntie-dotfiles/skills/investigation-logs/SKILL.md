@@ -36,3 +36,12 @@ Produce an **audit trail**: an ordered explanation of how the system arrived at 
 4. **Check for your slug.** If present, note the value. If absent, investigate why.
 5. **Trace upstream.** Find where the observed state was produced or decided. Add a log there. Repeat from step 3.
 6. **Present the audit trail** once every link from origin to failure is backed by an observed log line with the current version slug.
+
+## Presenting the trail
+
+The audit trail has two kinds of content:
+
+1. **Evidence** — raw log output and any captured run artifacts. Keep these as files on disk and reference them by path as needed. Do not reformat or polish.
+2. **Explanation** — the inline prose that ties the evidence together and walks the reader through the trace. When the explanation points at a specific line of *source code* (the place a value was set, a branch was taken, a transformation happened), render it as a code frame using the `code-frame` skill if available, rather than a bare `path:line` string.
+
+Code frames are for source citations in the explanation only. They are not a presentation format for log output.
