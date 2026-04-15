@@ -7,9 +7,11 @@ Personal Claude Code settings.
 - **CLAUDE.md** - Project rules and workflow conventions
 - **commands/** - User commands
     - `/conflicts` - Resolve merge conflicts in the working tree
-    - `/rebase` - Rebase the current stack onto stable (Mercurial)
+    - `/rebase` - Rebase the current branch or stack onto an upstream target (git and Mercurial)
 - **plugins/huntie-dotfiles** - Custom skills plugin
+    - `/code-frame` - Format a code location as a terminal-style frame (non-invocable)
     - `/commit-msg` - Generate commit messages
+    - `/deep-system-trace` - Trace data flow through a system using log instrumentation
 
 ## Installation
 

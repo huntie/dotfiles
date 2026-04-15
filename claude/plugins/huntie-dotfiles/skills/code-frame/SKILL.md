@@ -1,6 +1,6 @@
 ---
 name: code-frame
-description: Use when surfacing a specific code location in CLI/terminal output — errors, investigation findings, code review comments, or "look at line N" pointers. Formats the location like Jest, Babel, and ESLint do: file path with line:column, then 2-3 lines of context with a caret marking the target line. Use whenever you would otherwise write "see foo.ts line 42" — show the frame instead.
+description: Formats a specific code location as a terminal-style frame — file path with line:column, 2–3 lines of context, and a caret on the target line, matching Jest/Babel/ESLint. Use whenever you would otherwise write "see foo.ts line 42".
 user-invocable: false
 ---
 

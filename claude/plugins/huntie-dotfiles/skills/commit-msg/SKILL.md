@@ -1,7 +1,9 @@
 ---
 name: commit-msg
-description: Generate a commit message for the current changes
+description: Generate a commit message for the current changes. Use when committing or when asked to draft a commit message.
 ---
+
+# Commit Messages
 
 Generate a commit message for the current changes. Follow these steps:
 
