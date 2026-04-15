@@ -57,10 +57,7 @@ alias suggest 'gh copilot suggest'
 
 if [ (uname) = 'Darwin' ]
     alias ls 'ls -F -h -G'
-    alias setclip pbcopy
-    alias getclip pbpaste
 
-    abbr -a brewdeps 'brew deps --tree --installed'
     abbr -a tldr 'tldr --platform linux'
     abbr -a tower gittower
 else
