@@ -23,6 +23,9 @@ This symlinks `CLAUDE.md` and `commands/` into `~/.claude/`. The plugin director
 
 ## Plugin setup
 
+> [!Note]
+> **Why a plugin for skills?** Claude Code doesn't follow symlinks when scanning for skills (https://github.com/anthropics/claude-code/issues/14836). Using a local marketplace plugin bypasses this by pointing directly at the real directory path.
+
 Register the dotfiles plugin directory as a local marketplace in
 `~/.claude/settings.json`:
 
