@@ -14,7 +14,9 @@ Some packages don't use `stow` due to app-specific constraints:
 
 - **Rectangle** — Config file is copied (not symlinked), as Rectangle replaces the file on launch.
 
-        cp -f rectangle/RectangleConfig.json ~/Library/Application\ Support/Rectangle/
+    ```
+    cp -f rectangle/RectangleConfig.json ~/Library/Application\ Support/Rectangle/
+    ```
 
 - **VS Code** — Manually merged. Extensions are installed via `install.sh`.
 
@@ -29,7 +31,18 @@ Enable the repo's Git hooks to auto-bump the Claude Code plugin version on commi
 ### fish
 
 - [`fish_plugins`](https://github.com/huntie/dotfiles/blob/master/fish/.config/fish/fish_plugins)
-- [Custom separators for forward/backward word selection](https://github.com/huntie/dotfiles/commit/8b74709)
+
+### git
+
+- [Aliases](https://github.com/huntie/dotfiles/blob/master/git/.gitconfig)
+
+### tmux
+
+- [Intuitive split bindings](https://github.com/huntie/dotfiles/blob/dda80f9ee54d8ee8980df9f47fe952970adb9ad0/tmux/.tmux-common.conf#L37-L39)
+
+### Homebrew
+
+- [Manage packages via `Brewfile`](https://github.com/huntie/dotfiles/blob/master/brew/Brewfile)
 
 ### macOS
 
