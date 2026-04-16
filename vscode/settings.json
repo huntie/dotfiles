@@ -84,8 +84,10 @@
   "zenMode.restore": false,
   // #endregion
   // #region Extensions
+  "claudeCode.enableNewConversationShortcut": true,
   "claudeCode.initialPermissionMode": "acceptEdits",
   "claudeCode.preferredLocation": "panel",
+  "claudeCode.useTerminal": true,
   "fileutils.newFile.typeahead.enabled": false,
   "fileutils.newFolder.typeahead.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
