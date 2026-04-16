@@ -31,10 +31,6 @@ Enable the repo's Git hooks to auto-bump the Claude Code plugin version on commi
 - [`fish_plugins`](https://github.com/huntie/dotfiles/blob/master/fish/.config/fish/fish_plugins)
 - [Custom separators for forward/backward word selection](https://github.com/huntie/dotfiles/commit/8b74709)
 
-### tmux
-
-- [Devserver config launching to Claude Code in tmux](https://github.com/huntie/dotfiles/blob/master/tmux/.tmux-devserver-setup.sh)
-
 ### macOS
 
 - [Map print_screen to system screenshot tool](https://github.com/huntie/dotfiles/commit/c298d939672dfa32512464901e06bbeb3cdbf5c6#diff-1e8586f694c8d7ae25cf4c644dff3fdcdef67ec374c6481c27bd6d28a7f751b6)
