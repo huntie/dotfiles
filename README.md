@@ -29,6 +29,7 @@ Enable the repo's Git hooks to auto-bump the Claude Code plugin version on commi
 ### fish
 
 - [`fish_plugins`](https://github.com/huntie/dotfiles/blob/master/fish/.config/fish/fish_plugins)
+- [Custom separators for forward/backward word selection](https://github.com/huntie/dotfiles/commit/8b74709)
 
 ### tmux
 
