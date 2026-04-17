@@ -58,7 +58,6 @@ alias suggest 'gh copilot suggest'
 if [ (uname) = 'Darwin' ]
     alias ls 'ls -F -h -G'
 
-    abbr -a tldr 'tldr --platform linux'
     abbr -a tower gittower
 else
     alias open xdg-open
