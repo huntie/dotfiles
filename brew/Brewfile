@@ -69,6 +69,10 @@ mas 'Microsoft To Do', id: 1274495053
 # brew 'imagemagick'
 # brew 'optipng'
 
+# Xcode
+# cask 'xcodes'
+# brew 'aria2'
+
 # JDK
 # cask 'adoptopenjdk/openjdk/adoptopenjdk17'
 
