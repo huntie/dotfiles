@@ -65,6 +65,8 @@ Optional longer description.
 
 ## Committing
 
+Always re-read the current commit or diff message (e.g. `git log -1 --format="%B"`, `sl log -r . -T '{desc}'`, `jf sync`) before overwriting it with edits. The user may have tweaked the message outside of Claude Code.
+
 When the user asks to commit (e.g. `hg commit`, `sl commit`, `git commit`), use the generated message to run the commit in one step:
 
 ### Sapling (hg/sl)

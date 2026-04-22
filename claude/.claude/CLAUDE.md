@@ -7,6 +7,12 @@
 - Use American English for artifacts: code, comments, and docs.
 - Do not hard-wrap text bodies (commit messages, Markdown, etc.). Let each paragraph be a single long line. Exception: match existing style in the file or codebase.
 
+### Vocabulary
+
+- Don't use "would" when describing behaviour. Use "can" or "will".
+- Avoid the word "actual" unless necessary. Prefer "target", "real", or other more precise terms.
+- Use "tradeoff" instead of "trade-off".
+
 ## Code style
 
 - Use `import type` for type-only imports.
