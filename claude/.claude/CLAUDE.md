@@ -36,9 +36,10 @@
 
 ### Commits
 
-- Do not create or amend commits unless explicitly asked, e.g. in plan mode, or when explicitly told to commit.
+- Do not create or amend commits unless explicitly asked.
 - Always use the `/commit-msg` skill to generate commit messages (git or hg/sl).
 - When amending a commit, also update the commit message to reflect the new changes.
+- In hg/sl repos, Phabricator is the source of truth for commit messages. When editing a message, always `jf sync` first to pull the latest, then propagate changes back via `jf submit --draft --update-fields`.
 
 ### Build & verification
 

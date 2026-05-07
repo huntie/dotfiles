@@ -7,7 +7,7 @@ description: Generate a commit message for the current changes. Use when committ
 
 Generate a commit message for the current changes. Follow these steps:
 
-1. Detect the repo type: run `sl root` (success = Sapling/hg repo), otherwise check for git.
+1. Detect the repo type: run `sl root` (success = Sapling/hg repo), otherwise we are in git.
 2. Review the current diff to understand what changed.
 3. Draft the commit message using the format below.
 
