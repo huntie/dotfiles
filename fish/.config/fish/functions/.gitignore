@@ -6,6 +6,7 @@ __z*.fish
 _autopair*.fish
 
 # huntie/dotfiles-fb
+__fbsource_root.fish
 fbs.fish
 rn.fish
 rnt.fish
