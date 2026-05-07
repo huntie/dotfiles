@@ -67,7 +67,7 @@
   "terminal.integrated.scrollback": 10000,
   "window.customTitleBarVisibility": "windowed",
   "window.newWindowDimensions": "inherit",
-  "window.title": "${activeEditorShort}${separator}${rootName}",
+  "window.title": "${activeEditorShort}${separator}${folderName}",
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.showIcons": false,
