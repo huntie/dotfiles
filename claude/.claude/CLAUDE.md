@@ -21,6 +21,11 @@
 - Prefer `test()` over `it()` for Jest tests.
 - When marking code sections, use `// #region` / `// #endregion` pairs. Keep blank lines around the code inside a region, but no blank line between an `#endregion` and the next `#region`.
 
+### Markdown tables
+
+- **New tables:** Use `---` (no padding) in separator cells; do not align columns.
+- **Existing tables:** Preserve column widths and separator style. Only change cell content unless structure is explicitly wrong.
+
 ### Android/Kotlin
 
 - Use `Log.d(ReactConstants.TAG, "[PREFIX] message")` — import `com.facebook.react.common.ReactConstants`.
