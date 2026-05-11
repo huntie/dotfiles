@@ -5,10 +5,8 @@ function fish_prompt
     echo -n "$USER "(prompt_pwd)' '
 
     if [ -n "$git_branch" ]
-        set -l git_changed (git ls-files -m)
-
         echo -n "($git_branch"
-        if [ -n "$git_changed" ]
+        if not git diff --quiet 2>/dev/null
             echo -n '*'
         end
         echo -n ') '
