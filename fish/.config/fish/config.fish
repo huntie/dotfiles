@@ -41,26 +41,20 @@ set -x COLORTERM truecolor
 alias ls 'ls -F -h'
 alias grep 'grep -n --color'
 
-alias setclip 'xclip -selection c'
-alias getclip 'xclip -selection c -o'
-
-abbr -a ywd 'pwd | setclip'
 abbr -a rsync 'rsync --progress'
-abbr -a npmlist 'npm list -g --depth=0'
+abbr -a ywd 'pwd | pbcopy'
 abbr -a rand 'openssl rand -base64'
 abbr -a nvm fnm
+abbr -a tower gittower
 
 alias sail './vendor/bin/sail'
 
-alias explain 'gh copilot explain'
-alias suggest 'gh copilot suggest'
-
 if [ (uname) = 'Darwin' ]
     alias ls 'ls -F -h -G'
-
-    abbr -a tower gittower
 else
     alias open xdg-open
+    alias pbcopy 'xclip -selection c'
+    alias pbpaste 'xclip -selection c -o'
 end
 
 # - Colors -
