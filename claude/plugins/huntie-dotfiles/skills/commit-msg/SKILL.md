@@ -7,84 +7,70 @@ description: Generate a commit message for the current changes. Use when committ
 
 Generate a commit message for the current changes. Follow these steps:
 
-1. Detect the repo type: run `sl root` (success = Sapling/hg repo), otherwise we are in git.
+1. Detect the repo type: run `sl root` (success = Sapling/hg repo), otherwise git.
 2. Review the current diff to understand what changed.
-3. Draft the commit message using the format below.
+3. Draft the commit message using the rules and format below.
 
-## General rules
+## Title
 
-- Keep the title under 72 characters.
-- Use imperative mood ("Fix bug", not "Fixed bug").
-- Focus on **why**, not just what.
-- Don't use backticks or other Markdown formatting in the title. Formatting is fine in the body/summary.
-- Description is optional — skip for trivial changes. When included, write flowing paragraphs without hard line breaks at a fixed character width.
+- Under 72 characters. Imperative mood ("Fix bug", not "Fixed bug").
+- No backticks or Markdown formatting.
+- In Sapling/hg repos, prefix with `[area]` bracket tags (see [Title tags](#title-tags-saplinghg-only)).
 
-## Message style
+## Summary
 
-### Sapling/hg repos
+Skip for trivial changes.
 
-Prefix the title with one or more `[area]` bracket tags to categorize the change. Tags are hierarchical — start with the broadest relevant area, then narrow by sub-area, feature, or platform as needed.
+**Front-load the why.** The first sentence should let a reader who stops there understand the diff.
+
+Use h4 subheadings (`####`) to organize longer summaries. Short summaries need no subheadings — don't force structure where a plain paragraph suffices. Choose from these as needed:
+
+| Subheading | When to use |
+|---|---|
+| `#### Context` | Background for follow-up diffs or stacked changes. |
+| `#### Motivation` | Why this change is worth making — the user pain or technical driver. |
+| `#### Problem` / `#### Root cause` / `#### Fix` | Bug narratives. Use the subset that fits — all three for complex bugs, just **Problem** + **Fix** for straightforward ones. |
+| `#### This diff` | What specifically *this* diff does, when **Context** sets up a broader effort. |
+| `#### Changes` | Bullet list of what changed — useful for multi-faceted diffs. |
+| `#### Impact` | What this means for users, performance, or downstream consumers. |
+| `#### Notes` | Caveats, limitations, or remaining work. |
+
+Use Before/After tables for visual or behavioral comparisons. Reference prior work concisely: "Follows D1234" or "Follow-up to #1234".
+
+## Title tags (Sapling/hg only)
+
+Prefix the title with one or more `[area]` bracket tags. Tags are hierarchical — broadest area first, narrowing by sub-area, feature, or platform.
 
 To choose the right tags, check the commit history of the changed files and their parent folders (e.g. `sl log -l 10 path/to/file`).
 
-**Tag conventions:**
-
 - Use the project/repo shorthand as the primary tag (e.g. `[RN]`, `[metro]`).
-- Stack additional tags for sub-area, feature initiative, or platform: `[RN][DevTools]`, `[RN][Network Inspection][Android]`.
+- Stack additional tags for sub-area, feature, or platform: `[RN][scripts]`, `[RN][Network Inspection][Android]`.
 - Platform tags go last: `[Android]`, `[iOS]`.
 - Use lowercase for standalone projects or packages: `[react_cdp_tools]`, `[dev-middleware]`.
-- Omit the project tag when the project is obvious from context (e.g. in a single-project repo).
+- Omit the project tag when obvious from context (e.g. single-project repo).
 
-**Examples:**
+Examples: `[RN] Narrow file set for no-commonjs-exports lint rule`, `[RN][Network Inspection][Android] Add onCreateRequest compatibility overload`.
 
-- `[RN] Narrow file set for no-commonjs-exports lint rule`
-- `[RN][performance] Refactor PerformanceEntry as std::variant`
-- `[RN][Network Inspection][Android] Add onCreateRequest compatibility overload`
-- `[RN][scripts] Add build_debugger_shell check to CI`
+## React Native conventions
 
-**Additional notes:**
-
+- Internal changes: include `Changelog: [Internal]` in the summary.
+- Public changes: use a changelog category, e.g. `Changelog: [Android][Fixed] - ...`.
 - Do not include "Differential Revision" lines — those are managed separately.
-- For React Native repos: internal changes must include `Changelog: [Internal]` in the summary. Public changes require a proper changelog category (e.g. `Changelog: [Android][Fixed] - ...`).
-- Output the message using explicit `Title:` and `Summary:` labels:
-
-```
-Title: [area] Short summary of the change
-Summary: Optional longer description.
-```
-
-### Git repos
-
-Use a plain summary line with no bracket tags.
-
-```
-Short summary of the change
-
-Optional longer description.
-```
 
 ## Committing
 
-Always re-read the current commit or diff message (e.g. `git log -1 --format="%B"`, `sl log -r . -T '{desc}'`, `jf sync`) before overwriting it with edits. The user may have tweaked the message outside of Claude Code.
+Always re-read the current commit or diff message (e.g. `git log -1 --format="%B"`, `sl log -r . -T '{desc}'`, `jf sync`) before overwriting it. The user may have edited it outside Claude Code.
 
-When the user asks to commit (e.g. `hg commit`, `sl commit`, `git commit`), use the generated message to run the commit in one step:
-
-### Sapling (hg/sl)
+When asked to commit, use the generated message directly:
 
 ```bash
-# With summary:
+# Sapling — with summary:
 sl commit -m "<Title>" --message-field "Summary=<Summary>"
-
-# Without summary:
+# Sapling — without summary:
 sl commit -m "<Title>"
-```
 
-### Git
-
-```bash
-# With description:
+# Git — with description:
 git commit -m "<title>" -m "<description>"
-
-# Without description:
+# Git — without description:
 git commit -m "<title>"
 ```
