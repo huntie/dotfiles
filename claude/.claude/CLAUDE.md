@@ -1,6 +1,6 @@
 ## Output
 
-- When pointing to a specific code location, use the `/code-frame` skill. Always read the file first — never rely on prior search output for surrounding context lines.
+- When pointing to a specific code location, include `path:line:column` with 2–3 lines of surrounding context in a fenced code block. Always read the file first — never rely on prior search output for context lines.
 
 ## Writing style
 
