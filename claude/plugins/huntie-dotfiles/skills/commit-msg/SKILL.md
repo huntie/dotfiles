@@ -23,17 +23,17 @@ Skip for trivial changes.
 
 **Front-load the why.** The first sentence should let a reader who stops there understand the diff.
 
-Use h4 subheadings (`####`) to organize longer summaries. Short summaries need no subheadings — don't force structure where a plain paragraph suffices. Choose from these as needed:
+Use bold subheadings (`**Heading**`) to organize longer summaries. Short summaries need no subheadings — don't force structure where a plain paragraph suffices. Choose from these as needed:
 
 | Subheading | When to use |
 |---|---|
-| `#### Context` | Background for follow-up diffs or stacked changes. |
-| `#### Motivation` | Why this change is worth making — the user pain or technical driver. |
-| `#### Problem` / `#### Root cause` / `#### Fix` | Bug narratives. Use the subset that fits — all three for complex bugs, just **Problem** + **Fix** for straightforward ones. |
-| `#### This diff` | What specifically *this* diff does, when **Context** sets up a broader effort. |
-| `#### Changes` | Bullet list of what changed — useful for multi-faceted diffs. |
-| `#### Impact` | What this means for users, performance, or downstream consumers. |
-| `#### Notes` | Caveats, limitations, or remaining work. |
+| Context | Background for follow-up diffs or stacked changes. |
+| Motivation | Why this change is worth making — the user pain or technical driver. |
+| Problem / Root cause / Fix | Bug narratives. Use the subset that fits — all three for complex bugs, just Problem + Fix for straightforward ones. |
+| This diff | What specifically *this* diff does, when Context sets up a broader effort. |
+| Changes | Bullet list of what changed — useful for multi-faceted diffs. |
+| Impact | What this means for users, performance, or downstream consumers. |
+| Notes | Caveats, limitations, or remaining work. |
 
 Use Before/After tables for visual or behavioral comparisons. Reference prior work concisely: "Follows D1234" or "Follow-up to #1234".
 
