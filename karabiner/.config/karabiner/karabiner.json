@@ -100,6 +100,34 @@
                         ]
                     },
                     {
+                        "manipulators": [
+                            {
+                                "description": "Map f5 to left_control+m (Apple Internal Keyboard)",
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_built_in_keyboard": true
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f5",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "m",
+                                        "modifiers": ["left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Map left_shift+backspace to delete_forward",
                         "manipulators": [
                             {
@@ -280,10 +308,6 @@
                         {
                             "from": { "key_code": "non_us_backslash" },
                             "to": [{ "key_code": "grave_accent_and_tilde" }]
-                        },
-                        {
-                            "from": { "key_code": "right_control" },
-                            "to": [{ "key_code": "right_option" }]
                         }
                     ]
                 },
@@ -298,15 +322,6 @@
                     "manipulate_caps_lock_led": false,
                     "mouse_flip_horizontal_wheel": true,
                     "name": "Logitech MX Master 3"
-                },
-                {
-                    "fn_function_keys": [
-                        {
-                            "from": { "key_code": "f5" },
-                            "to": [{ "key_code": "right_option" }]
-                        }
-                    ],
-                    "identifiers": { "is_keyboard": true }
                 }
             ],
             "fn_function_keys": [
