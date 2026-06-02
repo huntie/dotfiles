@@ -24,3 +24,8 @@ unfocused-split-opacity = 1
 
 macos-option-as-alt = true
 macos-titlebar-style = tabs
+
+macos-icon = custom-style
+macos-icon-frame = aluminum
+macos-icon-screen-color = #1b1b1b
+macos-icon-ghost-color = #ededed
