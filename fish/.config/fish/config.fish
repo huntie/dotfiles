@@ -36,6 +36,10 @@ set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgrep/rc
 # Enable true color support
 set -x COLORTERM truecolor
 
+# Claude Code truecolor override
+# (https://github.com/anthropics/claude-code/issues/35148)
+set -x CLAUDE_CODE_TMUX_TRUECOLOR 1
+
 # - Aliases -
 
 alias ls 'ls -F -h'
