@@ -11,19 +11,31 @@ Generate a commit message for the current changes. Follow these steps:
 2. Review the current diff to understand what changed.
 3. Draft the commit message using the rules and format below.
 
-## Title
+## Title (subject line)
 
 - Under 72 characters. Imperative mood ("Fix bug", not "Fixed bug").
-- No backticks or Markdown formatting.
+- No backticks or Markdown formatting in the title — plain text only. Markdown belongs in the Summary (below).
 - In Sapling/hg repos, prefix with `[area]` bracket tags (see [Title tags](#title-tags-saplinghg-only)).
 
-## Summary
+## Summary (description)
 
 Skip for trivial changes.
 
 **Front-load the why.** The first sentence should let a reader who stops there understand the diff.
 
-Use bold subheadings (`**Heading**`) to organize longer summaries. Short summaries need no subheadings — don't force structure where a plain paragraph suffices. Choose from these as needed:
+Use bold subheadings to organize longer summaries — each `**Heading**` on its own line with a blank line before and after:
+
+```
+**Motivation**
+
+Why this change is worth making.
+
+**This diff**
+
+What this diff does about it.
+```
+
+Short summaries need no subheadings — don't force structure where a plain paragraph suffices. Choose from these as needed:
 
 | Subheading | When to use |
 |---|---|
@@ -69,8 +81,8 @@ sl commit -m "<Title>" --message-field "Summary=<Summary>"
 # Sapling — without summary:
 sl commit -m "<Title>"
 
-# Git — with description:
-git commit -m "<title>" -m "<description>"
-# Git — without description:
-git commit -m "<title>"
+# Git — with summary:
+git commit -m "<Title>" -m "<Summary>"
+# Git — without summary:
+git commit -m "<Title>"
 ```
