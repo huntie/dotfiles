@@ -49,6 +49,11 @@ if [[ -f $HOMEBREW_PREFIX/bin/fnm ]]; then
     eval "$(fnm env --use-on-cd --shell bash)"
 fi
 
+# Grok Build
+if [[ -d $HOME/.grok/bin ]]; then
+    export PATH=$HOME/.grok/bin:$PATH
+fi
+
 # jenv
 if [[ -d $HOME/.jenv/shims ]]; then
     eval "$(jenv init - --no-rehash)"
