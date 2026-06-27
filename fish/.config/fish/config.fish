@@ -87,6 +87,22 @@ set -U fish_color_status red
 set -U fish_color_user brgreen
 set -U fish_color_valid_path --underline
 
+# - Completions -
+
+if type -q brew
+    set -l vendor_completions (brew --prefix)/share/fish/vendor_completions.d
+    for tool in brew bun fnm
+        if test -f $vendor_completions/$tool.fish
+            source $vendor_completions/$tool.fish
+        end
+    end
+end
+
+# Grok Build
+if type -q grok
+    grok completions fish | source
+end
+
 # - Packages -
 
 # Install and run Fisher package manager on first run
