@@ -15,6 +15,7 @@
 
 ## Code style
 
+- You MUST end every file with a single trailing newline, unless an `.editorconfig` says otherwise.
 - Use `import type` for type-only imports.
 - Do not add `@ts-ignore`, `@ts-expect-error`, or `$FlowFixMe` without a comment explaining why.
 - Do not use `any` — prefer `unknown`, proper generics, or a specific type.
