@@ -1,4 +1,4 @@
-function backward-word-custom
+function _backward_word_custom
     set -l cmd (commandline)
     set -l pos (commandline --cursor)
     set -l sep (_word_separators)

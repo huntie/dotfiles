@@ -1,4 +1,4 @@
-function forward-word-custom
+function _forward_word_custom
     set -l cmd (commandline)
     set -l pos (commandline --cursor)
     set -l len (string length -- "$cmd")
