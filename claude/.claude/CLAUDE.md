@@ -9,7 +9,7 @@
 
 ### Vocabulary
 
-- Don't use "would" when describing behaviour. Use "can" or "will".
+- Don't use "would" when describing behavior. Use "can" or "will".
 - Avoid the word "actual" unless necessary. Prefer "target", "real", or other more precise terms.
 - Use "tradeoff" instead of "trade-off".
 
@@ -21,6 +21,11 @@
 - Do not use `any` — prefer `unknown`, proper generics, or a specific type.
 - Prefer `test()` over `it()` for Jest tests.
 - When marking code sections, use `// #region` / `// #endregion` pairs. Keep blank lines around the code inside a region, but no blank line between an `#endregion` and the next `#region`.
+
+### Comments and docs
+
+- Comments and docs describe the code as it stands, not how it got there — write for a reader seeing the final result cold. Do not encode the path that produced the code: rejected alternatives, "changed from X to Y", "now uses…", "no longer…", or rationale that only made sense against an earlier draft.
+- Keep a "why" comment only when the reason is non-obvious from the code itself and still true of the final version.
 
 ### Markdown tables
 
