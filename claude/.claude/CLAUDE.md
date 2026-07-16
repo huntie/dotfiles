@@ -6,6 +6,7 @@
 
 - Use American English for artifacts: code, comments, and docs.
 - Do not hard-wrap text bodies (commit messages, Markdown, etc.). Let each paragraph be a single long line. Exception: match existing style in the file or codebase.
+- When opening with a Smart Brevity lede — a short label followed by a colon — capitalize both the label and the first word after it: "Note: Existing callers are unaffected", not "Note: existing callers are unaffected".
 
 ### Vocabulary
 

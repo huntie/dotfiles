@@ -13,15 +13,17 @@ Generate a commit message for the current changes. Follow these steps:
 
 ## Title (subject line)
 
-- Under 72 characters. Imperative mood ("Fix bug", not "Fixed bug").
+- Concise and specific. Aim for ~72 characters. Imperative mood ("Fix bug", not "Fixed bug").
 - No backticks or Markdown formatting in the title — plain text only. Markdown belongs in the Summary (below).
 - In Sapling/hg repos, prefix with `[area]` bracket tags (see [Title tags](#title-tags-saplinghg-only)).
 
 ## Summary (description)
 
-Skip for trivial changes.
+Keep it proportionate. Most diffs need only a paragraph or two — subheadings and a Changes list are opt-in, for genuinely multi-faceted diffs, not a template to fill. A trivial change needs one line (plus the `Changelog:` trailer); don't pad.
 
 **Front-load the why.** The first sentence should let a reader who stops there understand the diff.
+
+**Stay high-level.** Describe the change at the altitude a reviewer reasons about it — by concern and behavior, not file by file. Group related edits; collapse bulk or mechanical changes into a single bullet with a count (e.g. "Repoint deep type imports to the public root API — 146 files") rather than listing them. If a bullet list is turning into a file inventory, it's too granular — summarize.
 
 Use bold subheadings to organize longer summaries — each `**Heading**` on its own line with a blank line before and after:
 
@@ -43,11 +45,13 @@ Short summaries need no subheadings — don't force structure where a plain para
 | Motivation | Why this change is worth making — the user pain or technical driver. |
 | Problem / Root cause / Fix | Bug narratives. Use the subset that fits — all three for complex bugs, just Problem + Fix for straightforward ones. |
 | This diff | What specifically *this* diff does, when Context sets up a broader effort. |
-| Changes | Bullet list of what changed — useful for multi-faceted diffs. |
+| Changes | A short list of distinct changes, grouped by concern; omit if a sentence covers it. |
 | Impact | What this means for users, performance, or downstream consumers. |
 | Notes | Caveats, limitations, or remaining work. |
 
-Use Before/After tables for visual or behavioral comparisons. Reference prior work concisely: "Follows D1234" or "Follow-up to #1234".
+- **Do use backticks** in the summary — API names, packages, paths, flags, files.
+- Use Before/After tables for visual or behavioral comparisons.
+- Reference prior work concisely: "Follows D1234" or "Follow-up to #1234".
 
 ## Title tags (Sapling/hg only)
 
@@ -60,6 +64,7 @@ To choose the right tags, check the commit history of the changed files and thei
 - Platform tags go last: `[Android]`, `[iOS]`.
 - Use lowercase for standalone projects or packages: `[react_cdp_tools]`, `[dev-middleware]`.
 - Omit the project tag when obvious from context (e.g. single-project repo).
+- Tags don't count toward the ~72-character title target — measure only the text after them.
 
 Examples: `[RN] Narrow file set for no-commonjs-exports lint rule`, `[RN][Network Inspection][Android] Add onCreateRequest compatibility overload`.
 
