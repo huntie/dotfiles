@@ -12,6 +12,7 @@ Personal Claude Code settings.
 - **plugins/huntie-dotfiles** - Custom skills plugin
     - `/commit-msg` - Generate commit messages
     - `/deep-system-trace` - Trace data flow through a system using tagged log instrumentation
+    - `/submit` - Submit work for review as GitHub PRs (gh) or Graphite stacks (gt), keeping PR metadata in sync with commit messages
 
 ## Installation
 

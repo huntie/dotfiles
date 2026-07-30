@@ -7,7 +7,7 @@ description: Generate a commit message for the current changes. Use when committ
 
 Generate a commit message for the current changes. Follow these steps:
 
-1. Detect the repo type: run `sl root` (success = Sapling/hg repo), otherwise git.
+1. Detect the repo type: run `git rev-parse --git-dir` (success = git); otherwise, `sl root` succeeding means Sapling/hg. Check git first — Sapling's git interop makes `sl root` succeed inside git repos too.
 2. Review the current diff to understand what changed.
 3. Draft the commit message using the rules and format below.
 
@@ -91,3 +91,5 @@ git commit -m "<Title>" -m "<Summary>"
 # Git — without summary:
 git commit -m "<Title>"
 ```
+
+To create or update PRs for committed work in git repos, use the `/submit` skill — it keeps PR titles and bodies in sync with commit messages.
