@@ -6,11 +6,11 @@ brew 'mas'
 
 cask '1password'
 cask 'google-chrome'
-cask 'iterm2'
 cask 'ghostty'
 cask 'karabiner-elements'
 cask 'raycast'
 cask 'rectangle'
+cask 'thebrowsercompany-dia'
 
 # Command line apps
 
@@ -47,9 +47,12 @@ brew 'yarn'
 
 # Desktop apps
 
+cask 'claude'
+cask 'cursor'
 cask 'gpg-suite-no-mail'
 cask 'hiddenbar'
 cask 'pictogram'
+cask 'slack'
 cask 'spotify'
 cask 'tower'
 cask 'visual-studio-code'
@@ -70,7 +73,7 @@ mas 'Microsoft To Do', id: 1274495053
 # brew 'optipng'
 
 # Xcode
-# cask 'xcodes'
+# brew 'xcodes'
 # brew 'aria2'
 
 # JDK
