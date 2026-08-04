@@ -69,6 +69,9 @@ defaults write com.apple.dock show-recents -float 0
 # Disable the Launchpad gesture
 defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
+# Enable the App Exposé gesture
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
 # - Mission Control -
 
 # Disable automatic rearrangement of Spaces

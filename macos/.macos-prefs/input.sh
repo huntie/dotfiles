@@ -33,6 +33,23 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Disable "Natural" scroll direction
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+# Enable tap to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
+# Disable Force Click and haptic feedback
+defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
+for domain in com.apple.AppleMultitouchTrackpad com.apple.driver.AppleBluetoothMultitouch.trackpad; do
+    defaults write "${domain}" ForceSuppressed -int 1
+    defaults write "${domain}" ActuateDetents -int 0
+    defaults write "${domain}" FirstClickThreshold -int 0
+    defaults write "${domain}" SecondClickThreshold -int 0
+done
+
+# Look up by tapping with three fingers
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -int 2
+
 # - Devices -
 
 # Prevent Photos from opening automatically when devices are plugged in
