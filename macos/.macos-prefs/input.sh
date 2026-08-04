@@ -28,6 +28,14 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# - Keyboard Shortcuts -
+
+# Disable "Show Finder Search Window" (cmd+option+space)
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 '{enabled = 0;}'
+
+# Disable "Ask Siri about the active window" (cmd+shift+space)
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 263 '{enabled = 0;}'
+
 # - Trackpad -
 
 # Disable "Natural" scroll direction
