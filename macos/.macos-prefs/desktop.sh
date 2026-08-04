@@ -6,6 +6,9 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # - Menu Bar -
 
+# Show Menu Bar background
+defaults write -g SLSMenuBarUseBlurredAppearance -bool true
+
 # Hide the Time Machine, Volume, and User items
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
     defaults write "${domain}" dontAutoLoad -array \
