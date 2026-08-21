@@ -2,6 +2,11 @@ command = /bin/zsh -l -c "fish; exit"
 quit-after-last-window-closed = true
 auto-update = off
 
+working-directory = home
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = true
+
 confirm-close-surface = false
 mouse-scroll-multiplier = 2
 
