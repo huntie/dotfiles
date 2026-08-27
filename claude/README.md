@@ -11,7 +11,7 @@ Personal Claude Code settings.
     - `/rebase` - Rebase the current branch or stack onto an upstream target (git and Mercurial)
 - **plugins/huntie-dotfiles** - Custom skills plugin
     - `/commit-msg` - Generate commit messages
-    - `/deep-system-trace` - Trace data flow through a system using tagged log instrumentation
+    - `/trace-flow` - Trace end-to-end system flow using tagged log instrumentation
 
 ## Installation
 

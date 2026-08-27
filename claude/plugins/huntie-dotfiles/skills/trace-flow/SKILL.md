@@ -1,11 +1,11 @@
 ---
-name: deep-system-trace
-description: Instrument code with tagged log statements to trace data flow — no behavior changes. Use when investigating issues across layers, caching, or when asked to "trace" or "add debug logging".
+name: trace-flow
+description: Instrument code with tagged log statements to trace end-to-end system flow — how an observed behavior came about. Adds logs only; never applies a fix. Use when investigating issues that span layers, build steps, or caching, or when asked to "trace" or "add debug logging".
 ---
 
-# Deep System Trace
+# Trace System Flow
 
-Investigate a build or runtime issue by instrumenting code with log statements — without changing any semantics or behavior. Your remit is purely to trace data flow and explain what the code is doing AS IS.
+Investigate a build or runtime issue by instrumenting code with log statements — without changing any semantics or behavior. Your remit is purely to trace end-to-end system flow and explain what the code is doing AS IS.
 
 ## Goal
 
