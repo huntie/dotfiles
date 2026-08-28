@@ -2,55 +2,8 @@
 
 Personal Claude Code settings.
 
-## Contents
+## Skills? → [huntie/skills](https://github.com/huntie/skills)
 
-- **CLAUDE.md** - Project rules and workflow conventions
-- **commands/** - User commands
-    - `/conflicts` - Resolve merge conflicts in the working tree
-    - `/materialize` - Materialize a described change, then commit
-    - `/rebase` - Rebase the current branch or stack onto an upstream target (git and Mercurial)
-- **plugins/huntie-dotfiles** - Custom skills plugin
-    - `/commit-msg` - Generate commit messages
-    - `/trace-flow` - Trace end-to-end system flow using tagged log instrumentation
+Previously, my commands and skills were committed here, but I found I updated these sporadically and they weren't my real, agent-maintained skills stack.
 
-## Installation
-
-Using GNU Stow from the dotfiles root:
-
-    stow -t ~/ claude
-
-This symlinks `CLAUDE.md` and `commands/` into `~/.claude/`. The plugin directory is excluded from stow (see `.stow-local-ignore`) because Claude Code cannot load plugins from symlinked directories.
-
-## Plugin setup
-
-> [!Note]
-> **Why a plugin for skills?** Claude Code doesn't follow symlinks when scanning for skills (https://github.com/anthropics/claude-code/issues/14836). Using a local marketplace plugin bypasses this by pointing directly at the real directory path.
-
-Register the dotfiles plugin directory as a local marketplace in
-`~/.claude/settings.json`:
-
-```json
-{
-  "extraKnownMarketplaces": {
-    "huntie": {
-      "source": {
-        "source": "directory",
-        "path": "/Users/huntie/Development/dotfiles/claude/plugins/huntie-dotfiles"
-      }
-    }
-  },
-  "enabledPlugins": {
-    "huntie-dotfiles@huntie": true
-  }
-}
-```
-
-Then install the plugin:
-
-    /plugin update
-
-## Syncing skills
-
-After editing skills in the dotfiles repo, refresh the plugin cache:
-
-    /plugin update
+Instead, Claude/Agent skills + rules will be part of another personal monorepo for all development, and selectively exported to [huntie/skills](https://github.com/huntie/skills).

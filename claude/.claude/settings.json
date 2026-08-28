@@ -1,0 +1,20 @@
+{
+  "model": "opus",
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "xhigh"
+    }
+  },
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "attribution": {
+    "commitTrailers": false,
+    "sessionUrl": false
+  },
+  "theme": "dark",
+  "tui": "fullscreen",
+  "agentPushNotifEnabled": true,
+  "enabledPlugins": {}
+}
