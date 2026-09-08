@@ -18,14 +18,13 @@ elif [[ -d $HOME/Library/Android/sdk ]]; then
 fi
 if [[ -n "$ANDROID_HOME" ]]; then
     export PATH=$ANDROID_HOME/emulator:$PATH
-    export PATH=$ANDROID_HOME/tools:$PATH
-    export PATH=$ANDROID_HOME/tools/bin:$PATH
+    export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
     export PATH=$ANDROID_HOME/platform-tools:$PATH
 fi
 if [[ -d /opt/android_ndk ]]; then
     export ANDROID_NDK_REPOSITORY=/opt/android_ndk
-elif [[ -d $HOME/Library/Android/sdk ]]; then
-    export ANDROID_NDK_REPOSITORY=$HOME/Library/Android/ndk
+elif [[ -d $ANDROID_HOME/ndk ]]; then
+    export ANDROID_NDK_REPOSITORY=$ANDROID_HOME/ndk
 fi
 
 # Bun
