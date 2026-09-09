@@ -51,6 +51,7 @@ abbr -a rand 'openssl rand -base64'
 abbr -a nvm fnm
 abbr -a tower gittower
 
+alias cursor cursor-agent
 alias sail './vendor/bin/sail'
 
 if [ (uname) = 'Darwin' ]
