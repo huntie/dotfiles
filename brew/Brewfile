@@ -77,11 +77,12 @@ mas 'Microsoft To Do', id: 1274495053
 # brew 'aria2'
 
 # JDK
-# cask 'adoptopenjdk/openjdk/adoptopenjdk17'
+cask 'zulu@17'
 
 # Android
-# cask 'android-sdk'
-# cask 'android-studio'
+# Platforms, build-tools, NDK, CMake and cmdline-tools come from Android Studio's
+# SDK Manager, not Homebrew.
+cask 'android-studio'
 # cask 'android-platform-tools'
 # brew 'pidcat'
 

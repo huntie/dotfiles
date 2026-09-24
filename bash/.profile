@@ -53,6 +53,12 @@ if [[ -d $HOME/.grok/bin ]]; then
     export PATH=$HOME/.grok/bin:$PATH
 fi
 
+# Java
+# React Native targets JDK 17, so pin JAVA_HOME to it rather than the newest JDK.
+if [[ -x /usr/libexec/java_home ]] && /usr/libexec/java_home -v 17 &> /dev/null; then
+    export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+fi
+
 # jenv
 if [[ -d $HOME/.jenv/shims ]]; then
     eval "$(jenv init - --no-rehash)"
