@@ -75,6 +75,7 @@ mas 'Microsoft To Do', id: 1274495053
 # Xcode
 # brew 'xcodes'
 # brew 'aria2'
+# cask 'sf-symbols'
 
 # JDK
 cask 'zulu@17'
