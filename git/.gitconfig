@@ -2,6 +2,10 @@
 	name = Alex Hunt
 	email = hello@alexhunt.dev
 	signingkey = 1251AC874D8A26D6FE585FFF25447D819EB34F4C
+[includeIf "hasconfig:remote.*.url:git@github.com:expo/**"]
+	path = .gitconfig-expo
+[includeIf "hasconfig:remote.*.url:https://github.com/expo/**"]
+	path = .gitconfig-expo
 [commit]
 	gpgsign = true
 [status]
