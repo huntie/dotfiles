@@ -1,0 +1,11 @@
+# GitHub Codespaces overrides, included by install.sh
+
+# No SSH key here, so use HTTPS. Must precede the include to win the tie with
+# the SSH rewrite in .gitconfig.
+[url "https://github.com/"]
+	insteadOf = https://github.com/
+	insteadOf = git@github.com:
+[include]
+	path = .gitconfig
+[gpg]
+	program = /.codespaces/bin/gh-gpgsign

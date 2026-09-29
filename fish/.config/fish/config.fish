@@ -107,6 +107,6 @@ end
 # - Packages -
 
 # Install and run Fisher package manager on first run
-if status is-interactive && not functions -q fisher
+if status is-interactive && not set -q CODESPACES && not functions -q fisher
     curl -sL https://git.io/fisher | source; and fisher install jorgebucaran/fisher
 end
