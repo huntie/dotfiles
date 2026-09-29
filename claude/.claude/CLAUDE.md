@@ -58,3 +58,4 @@
 - Use `buck2 build` for iOS and Android native targets, not `buck`.
 - Run the specific test file you changed, not the full suite: `yarn jest path/to/file.test.ts`.
 - Run lint and typecheck before considering a task complete.
+- Never set `CI` to silence a prompt: tools bundle unrelated behavior behind it, such as Expo, Jest, and Vitest disabling file watching. Redirect instead (`cmd < /dev/null > out.log 2>&1 &`), or use a tool's single-purpose variable (`GH_PROMPT_DISABLED`, `NO_COLOR`, `EXPO_NO_QR_CODE`).
