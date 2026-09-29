@@ -29,6 +29,7 @@
   "explorer.fileNesting.patterns": {
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb"
   },
+  "extensions.autoCheckUpdates": false,
   "files.insertFinalNewline": true,
   "files.saveConflictResolution": "overwriteFileOnDisk",
   "files.trimTrailingWhitespace": true,
@@ -66,6 +67,7 @@
     }
   },
   "terminal.integrated.scrollback": 10000,
+  "update.mode": "manual",
   "window.customTitleBarVisibility": "windowed",
   "window.newWindowDimensions": "inherit",
   "window.title": "${activeEditorShort}${separator}${folderName}",
