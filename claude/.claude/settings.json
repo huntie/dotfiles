@@ -10,6 +10,8 @@
   },
   "skipDangerousModePermissionPrompt": true,
   "attribution": {
+    "commit": "",
+    "pr": "",
     "commitTrailers": false,
     "sessionUrl": false
   },
