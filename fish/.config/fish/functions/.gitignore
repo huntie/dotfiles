@@ -8,11 +8,8 @@ _autopair*.fish
 # huntie/dotfiles-fb
 __fbsource_root.fish
 fbs.fish
-rn.fish
-rnt.fish
 xjs.fish
 xjst.fish
 
 # huntie/devroot
 dev.fish
-rnw.fish
