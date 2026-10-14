@@ -6,6 +6,10 @@
 	path = .gitconfig-expo
 [includeIf "hasconfig:remote.*.url:https://github.com/expo/**"]
 	path = .gitconfig-expo
+[includeIf "hasconfig:remote.*.url:git@github.com:react/**"]
+	path = .gitconfig-react
+[includeIf "hasconfig:remote.*.url:https://github.com/react/**"]
+	path = .gitconfig-react
 [commit]
 	gpgsign = true
 [status]
