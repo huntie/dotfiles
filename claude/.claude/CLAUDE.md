@@ -43,6 +43,10 @@
 
 - Use `RCTLog` macros for logging, not `NSLog`.
 
+### Swift
+
+- Write doc comments with `///`, not `/** */`.
+
 ## Workflow
 
 - In Sapling/hg repos, run `hg addremove --similarity 50` after adding, deleting, or moving files. This keeps the working copy status accurate.
