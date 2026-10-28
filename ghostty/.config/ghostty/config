@@ -27,5 +27,8 @@ shell-integration-features = no-cursor
 mouse-hide-while-typing = true
 unfocused-split-opacity = 1
 
+background-opacity = 0.95
+background-blur = 10
+
 macos-option-as-alt = true
 macos-titlebar-style = tabs
