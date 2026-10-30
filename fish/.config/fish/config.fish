@@ -104,6 +104,12 @@ if type -q grok
     grok completions fish | source
 end
 
+# - Hooks -
+
+if type -q direnv
+    direnv hook fish | source
+end
+
 # - Packages -
 
 # Install and run Fisher package manager on first run

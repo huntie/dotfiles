@@ -15,6 +15,7 @@ cask 'thebrowsercompany-dia'
 # Command line apps
 
 brew 'bat'
+brew 'direnv'
 brew 'fd'
 brew 'findutils'
 brew 'fish'
