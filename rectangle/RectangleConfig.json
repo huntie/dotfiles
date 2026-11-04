@@ -32,7 +32,7 @@
       "int" : 0
     },
     "autoMaximize" : {
-      "int" : 0
+      "int" : 2
     },
     "cascadeAllDeltaSize" : {
       "float" : 30
