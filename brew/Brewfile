@@ -86,6 +86,7 @@ cask 'zulu@17'
 # SDK Manager, not Homebrew.
 cask 'android-studio'
 # cask 'android-platform-tools'
+# brew 'android-cli'
 # brew 'pidcat'
 
 # Backend dev
