@@ -8,6 +8,7 @@
 - Do not hard-wrap text bodies (commit messages, Markdown, etc.). Let each paragraph be a single long line. Exception: match existing style in the file or codebase.
 - When opening with a Smart Brevity lede — a short label followed by a colon — capitalize both the label and the first word after it: "Note: Existing callers are unaffected", not "Note: existing callers are unaffected".
 - Describe technical behavior literally, as cause and effect. No personification or narrative flourish: "`read` blocks, since the PTY never sends input", not "waits for an answer nobody gives".
+- Attach a secondary item with ", plus <noun>", not a catch-all "and everything…" or "and all…" tail: "ships the HMR client, plus its dependencies", not "ships the HMR client and everything it imports".
 - In commit messages, PR descriptions and comments, and Linear issues, write high level and lean on bullets: a framing sentence, then short bullets. Leave out file paths, function names, version detail and test minutiae unless the reader acts on them.
 
 ### Vocabulary
