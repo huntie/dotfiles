@@ -30,6 +30,7 @@
 
 - Comments and docs describe the code as it stands, not how it got there — write for a reader seeing the final result cold. Do not encode the path that produced the code: rejected alternatives, "changed from X to Y", "now uses…", "no longer…", or rationale that only made sense against an earlier draft.
 - Keep a "why" comment only when the reason is non-obvious from the code itself and still true of the final version.
+- In TypeScript, write a doc comment (`/** */`) only on a top-level function, component or export, and a `//` line comment everywhere else, such as on props, type fields and unexported constants. A doc comment says what the thing is and what a caller needs to know, never how it lays out, draws or behaves step by step. Keep any comment only where the code cannot say it: a non-obvious value, or a workaround that reads as a mistake without one.
 
 ### Markdown tables
 
