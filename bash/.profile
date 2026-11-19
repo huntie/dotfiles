@@ -32,6 +32,11 @@ if [[ -d $HOME/.bun/bin ]]; then
     export PATH=$HOME/.bun/bin:$PATH
 fi
 
+# ccache
+if [[ -d $HOMEBREW_PREFIX/opt/ccache/libexec ]]; then
+    export PATH=$HOMEBREW_PREFIX/opt/ccache/libexec:$PATH
+fi
+
 # Composer
 if [[ -d $HOME/.composer/vendor/bin ]]; then
     export PATH=$HOME/.composer/vendor/bin:$PATH
